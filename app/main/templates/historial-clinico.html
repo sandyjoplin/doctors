@@ -1,0 +1,199 @@
+<ion-view view-title="Historial Clinico">
+    <ion-nav-buttons side="right">
+        <div class="btn-videollamada">
+            <img class="block" src="main/assets/images/icono/117_1.png" width="20px" alt="">
+        </div>
+        <div>
+        <span class="fontBlanco relative">
+            <span class="count">1</span>
+            <img src="main/assets/images/icono/102.png" style="width:30px;margin:0 0 0px 0" alt="">
+        </span> 
+        </div>
+        <img src="main/assets/images/bit2.png" style="height:20px;margin:0px 5px 6px 5px" alt="">
+    </ion-nav-buttons>
+  <!-- do you want padding? -->
+  <ion-content class="">
+    <ul class="row miTab" align="center">
+      <li class="col50 miTab-item" ng-click="tabUnofn()"><a>Las mías</a></li>
+      <li class="col50 miTab-item" ng-click="tabDosfn()"><a>Todas</a></li>
+    </ul>
+    <div ng-show="tabU">
+      <div class="padding10Top backBlanco">
+        <label class="item item-input inputS"> <img src="main/assets/images/icono/16.png" width="20px;" class="hvr-grow">
+        <input type="serch" class="inputS" placeholder="Busca doctor, padecimiento o fecha">
+        </label>
+      </div>
+      <div class="backCrema">
+        <div class="backBlanco padding10 margin10Top">
+        <div class="padding10">
+        <div class="row row-center" ui-sref="main.consulta">
+        <div class="col-33">
+        <p class="fontNegro1">Eduin Garnica</p>
+        <p class="fontGris4">Medico General</p>
+        </div>
+        <div class="col-33" align="center">
+        <div class=""> <img src="main/assets/images/perfil1.jpg" class="img9 hvr-grow" alt=""> </div>
+        </div>
+        <div class="col-33">
+        <p class="fontVerde6 derecha">10 junio 2017</p>
+        </div>
+        </div>
+        <div class="padding10Top">
+        <img src="main/assets/images/line.png" width="100%;" alt=""> </div>
+        <div class="">
+        <div class="row">
+        <div class="padding5Top">
+        <img src="main/assets/images/icono/167.png" width="20px" class="alignV hvr-grow" alt="">
+        <span class="fontNegro9 alignV  padding10Lef">Amigdalitis aguda</span></div>
+        </div>
+        <div class="row">
+        <div class="col-50">
+        <div class="padding5Top">
+        <img src="main/assets/images/icono/62.png" width="20px" class="alignV hvr-grow" alt="">
+        <span class="fontNegro9 alignV  padding10Lef">$500.00</span>
+        </div>
+        </div>
+        <div class="col-50">
+        <div class="padding5Top derecha" ui-sref="main.receta">
+        <span class="fontAzul alignV hvr-grow">Ver receta  <img src="main/assets/images/icono/24.png" width="15px" class="alignV" alt=""></span>
+
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div class="backBlanco padding10 margin10Top">
+        <div class="padding10">
+        <div class="row row-center" ui-sref="main.consulta">
+        <div class="col-33">
+        <p class="fontNegro1">Eduin Garnica</p>
+        <p class="fontGris4">Medico General</p>
+        </div>
+        <div class="col-33" align="center">
+        <div class=""> <img src="main/assets/images/perfil1.jpg" class="img9 hvr-grow" alt=""> </div>
+        </div>
+        <div class="col-33">
+        <p class="fontVerde6 derecha">10 junio 2017</p>
+        </div>
+        </div>
+        <div class="padding10Top">
+        <img src="main/assets/images/line.png" width="100%;" alt=""> </div>
+        <div class="">
+        <div class="row">
+        <div class="padding5Top">
+        <img src="main/assets/images/icono/167.png" width="20px" class="alignV hvr-grow" alt="">
+        <span class="fontNegro9 alignV  padding10Lef">Amigdalitis aguda</span></div>
+        </div>
+        <div class="row">
+        <div class="col-50">
+        <div class="padding5Top">
+        <img src="main/assets/images/icono/62.png" width="20px" class="alignV hvr-grow" alt="">
+        <span class="fontNegro9 alignV  padding10Lef">$500.00</span>
+        </div>
+        </div>
+        <div class="col-50">
+        <div class="padding5Top derecha" ui-sref="main.receta">
+        <span class="fontAzul alignV hvr-grow">Ver receta    <img src="main/assets/images/icono/24.png" width="15px" class="alignV" alt=""></span>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div ng-show="tabD">
+      <div class="padding10Top backBlanco">
+        <label class="item item-input inputS"> <img src="main/assets/images/icono/16.png" width="20px;">
+        <input type="serch" class="inputS" placeholder="Busca doctor, padecimiento o fecha">
+        </label>
+      </div>
+      <div class="backBlanco">
+        <div class="backVerde pt20 pb20  mt20">
+        <p class="text-center fontBlanco">Solicitud para ver consultas de otros, enviada</p>
+        </div>
+        <div class="pico"></div>
+      </div>
+      <div class="backCrema">
+        <div class="backBlanco padding10 margin10Top">
+        <div class="padding10">
+        <div class="row row-center" ui-sref="main.consulta">
+        <div class="col-33">
+        <p class="fontNegro1">Eduin Garnica</p>
+        <p class="fontGris4">Medico General</p>
+        </div>
+        <div class="col-33" align="center">
+        <div class=""> <img src="main/assets/images/perfil1.jpg" class="img9 hvr-grow" alt=""> </div>
+        </div>
+        <div class="col-33">
+        <p class="fontVerde6 derecha">10 junio 2017</p>
+        </div>
+        </div>
+        <div class="padding10Top">
+        <img src="main/assets/images/line.png" width="100%;" alt=""> </div>
+        <div class="">
+        <div class="row">
+        <div class="padding5Top">
+        <img src="main/assets/images/icono/167.png" width="20px" class="alignV hvr-grow" alt="">
+        <span class="fontNegro9 alignV  padding10Lef">Amigdalitis aguda</span></div>
+        </div>
+        <div class="row">
+        <div class="col-50">
+        <div class="padding5Top">
+        <img src="main/assets/images/icono/62.png" width="20px" class="alignV hvr-grow" alt="">
+        <span class="fontNegro9 alignV  padding10Lef">$500.00</span>
+        </div>
+        </div>
+        <div class="col-50">
+        <div class="padding5Top derecha" ui-sref="main.receta">
+        <span class="fontAzul alignV hvr-grow">Ver receta <img src="main/assets/images/icono/24.png" width="15px" class="alignV" alt=""></span>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div class="backBlanco padding10 margin10Top">
+        <div class="padding10">
+        <div class="row row-center" ui-sref="main.consulta">
+        <div class="col-33">
+        <p class="fontNegro1">Eduin Garnica</p>
+        <p class="fontGris4">Medico General</p>
+        </div>
+        <div class="col-33" align="center">
+        <div class=""> <img src="main/assets/images/perfil1.jpg" class="img9 hvr-grow" alt=""> </div>
+        </div>
+        <div class="col-33">
+        <p class="fontVerde6 derecha">10 junio 2017</p>
+        </div>
+        </div>
+        <div class="padding10Top">
+        <img src="main/assets/images/line.png" width="100%;" alt=""> </div>
+        <div class="">
+        <div class="row">
+        <div class="padding5Top">
+        <img src="main/assets/images/icono/167.png" width="20px" class="alignV hvr-grow" alt="">
+        <span class="fontNegro9 alignV  padding10Lef">Amigdalitis aguda</span></div>
+        </div>
+        <div class="row">
+        <div class="col-50">
+        <div class="padding5Top">
+        <img src="main/assets/images/icono/62.png" width="20px" class="alignV hvr-grow" alt="">
+        <span class="fontNegro9 alignV  padding10Lef">$500.00</span>
+        </div>
+        </div>
+        <div class="col-50">
+        <div class="padding5Top derecha" ui-sref="main.receta">
+        <span class="fontAzul alignV hvr-grow">Ver receta  <img src="main/assets/images/icono/24.png" width="15px" class="alignV" alt=""></span>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+  </ion-content>
+</ion-view>

@@ -1,0 +1,445 @@
+<ion-side-menus enable-menu-with-back-views="false">
+
+    <!-- CONTENT -->
+    <ion-side-menu-content>
+
+        <!-- header bar -->
+        <!-- the nav bar will be updated as we navigate between views -->
+        <ion-nav-bar class="bar-royal">
+            <!-- back button, shown if applicable -->
+            <ion-nav-back-button>
+            </ion-nav-back-button>
+            <!-- nav button, shown if applicable -->
+            <ion-nav-buttons side="left">
+                <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+                </button>
+            </ion-nav-buttons>
+        </ion-nav-bar>
+
+        <!-- ROUTING INJECTED HERE: pageContent -->
+        <ion-nav-view name="pageContent"></ion-nav-view>
+
+    </ion-side-menu-content>
+
+    <!-- SIDEMENU -->
+    <ion-side-menu side="left">
+
+        <!-- menu header -->
+        <!--<ion-header-bar class="bar-royal">
+            <h1 class="title">Nav</h1>
+        </ion-header-bar> adignar menu de notificaciones-->
+
+
+
+        <!-- menu content -->
+        <ion-content>
+            <div align="center" class="borde">
+                <div class="bloque1">
+                    <img src="main/assets/images/perfil.jpg" menu-close ui-sref="main.home" class="img9" alt="">
+                    <p class="fontNegro">Sandra Juárez</p>
+                    <p class="fontAzul">Avance de perfil 60%</p>
+                </div>
+            </div>
+            <ion-list>
+                  <ion-item menu-close ui-sref="main.registro2">
+registro2
+                </ion-item> 
+               
+                 
+               
+               
+               
+                <ion-item menu-close ui-sref="main.donaciones" class="noBorde">
+                    <img src="main/assets/images/icono/10.png" width="20px" alt="" class="alignV"> <span class="fontNegro alignV"> Donaciones</span>
+                </ion-item>
+                <ion-item menu-close ui-sref="main.tarjeta" class="noBorde">
+                    <img src="main/assets/images/icono/11.png" width="20px" alt="" class="alignV"> <span class="fontNegro alignV"> Tarjetas y cuentas</span>
+                </ion-item>
+                <ion-item menu-close ui-sref="main.facturas" class="noBorde">
+                    <img src="main/assets/images/icono/12.png" width="20px" alt="" class="alignV"> <span class="fontNegro alignV"> Recibos y facturas</span>
+                </ion-item>
+                <ion-item menu-close ui-sref="main.notificaciones" class="noBorde">
+                    <img src="main/assets/images/icono/181.png" width="20px" alt="" class="alignV"> <span class="fontNegro alignV"> Notificaciones</span>
+                </ion-item>
+                <ion-item menu-close ui-sref="main.configuracion" class="noBorde">
+                    <img src="main/assets/images/icono/13.png" width="20px" alt="" class="alignV"> <span class="fontNegro alignV"> Configuración</span>
+                </ion-item>
+                <ion-item menu-close ui-sref="main.ayuda" class="noBorde">
+                    <img src="main/assets/images/icono/14.png" width="20px" alt="" class="alignV"> <span class="fontNegro alignV"> Ayuda</span>
+                </ion-item>
+
+                <div align="center" class="bloque1">
+                    <button class="button5">
+                        Cerrar sesión
+                    </button>
+                </div>
+
+                <div class="row" style="margin-bottom:10px;" align="center">
+                    <div class="col-33">
+                        <img src="main/assets/images/icono/66.png" width="20px" alt="">
+                    </div>
+                    <div class="col-33">
+                        <img src="main/assets/images/icono/67.png" width="20px" alt="">
+                    </div>
+                    <div class="col-33">
+                        <img src="main/assets/images/icono/68.png" width="20px" alt="">
+                    </div>
+                </div>
+                <p class="fontAzul text-center">Términos y políticas de privacidad</p>
+                <ion-item menu-close ui-sref="main.login" class="noBorde">
+                    Login
+                </ion-item>
+                <!--<ion-item menu-close ui-sref="main.debug">
+                 Debug   
+                </ion-item>-->
+                <ion-item menu-close ui-sref="main.iniciar">
+                    iniciar Sesion
+                </ion-item>
+                <ion-item menu-close ui-sref="main.registrate">
+                    Registrate
+                </ion-item>
+                <ion-item menu-close ui-sref="main.conocenos">
+                    Conocenos
+                </ion-item>
+                <ion-item menu-close ui-sref="main.invita">
+                    Invita
+                </ion-item>
+                <ion-item menu-close ui-sref="main.listo">
+                    Listo
+                </ion-item>
+                <ion-item menu-close ui-sref="main.home">
+                    Home
+                </ion-item>
+
+
+                <ion-item menu-close ui-sref="main.agenda">
+                    Agenda
+                </ion-item>
+                <ion-item menu-close ui-sref="main.agendaUno">
+                    Agenda uno
+                </ion-item>
+                <ion-item menu-close ui-sref="main.donaciones">
+                    Donaciones
+                </ion-item>
+                <ion-item menu-close ui-sref="main.tarjeta">
+                    Tarjeta
+                </ion-item>
+                <ion-item menu-close ui-sref="main.nuevaTarjeta">
+                    Nueva tarjeta
+                </ion-item>
+                <ion-item menu-close ui-sref="main.facturas">
+                    Facturas
+                </ion-item>
+                <ion-item menu-close ui-sref="main.agregarRfc">
+                    agregar Rfc
+                </ion-item>
+                <ion-item menu-close ui-sref="main.ayuda">
+                    Ayuda
+                </ion-item>
+
+                <ion-item menu-close ui-sref="main.preguntas">
+                    Preguntas
+                </ion-item>
+
+                <ion-item menu-close ui-sref="main.llenarPerfil">
+                    LLenar Perfil
+                </ion-item>
+                <ion-item menu-close ui-sref="main.expediente">
+                    expediente
+                </ion-item>
+                <ion-item menu-close ui-sref="main.nuevoDependiente">
+                    nuevo bitrubian
+                </ion-item>
+
+                <ion-item menu-close ui-sref="main.consultasPasadas">
+                    Consultas pasadas
+                </ion-item>
+                <ion-item menu-close ui-sref="main.receta">
+                    Receta
+                </ion-item>
+                <ion-item menu-close ui-sref="main.consulta">
+                    Consulta
+                </ion-item>
+                <ion-item menu-close ui-sref="main.historicoRecetas">
+                    Historico recetas
+                </ion-item>
+                <ion-item menu-close ui-sref="main.tuComunidad">
+                    Tu comunidad
+                </ion-item>
+                <ion-item menu-close ui-sref="main.amigo">
+                    amigo
+                </ion-item>
+                <ion-item menu-close ui-sref="main.comentarios">
+                    comentarios
+                </ion-item>
+                <ion-item menu-close ui-sref="main.beats">
+                    historico beats
+                </ion-item>
+                <ion-item menu-close ui-sref="main.recomendar">
+                    recomendar
+                </ion-item>
+                <ion-item menu-close ui-sref="main.agendaCita">
+                    agenda cita
+                </ion-item>
+                <ion-item menu-close ui-sref="main.compartir">
+                    compartir
+                </ion-item>
+                <ion-item menu-close ui-sref="main.compartirPublicacion">
+                    compartir publicacion
+                </ion-item>
+                <ion-item menu-close ui-sref="main.compartirPrivacidad">
+                    compartir Privacidad
+                </ion-item>
+                <ion-item menu-close ui-sref="main.grupos">
+                    Grupos
+                </ion-item>
+                <ion-item menu-close ui-sref="main.nuevoGrupo">
+                    nuevo grupo
+                </ion-item>
+                <ion-item menu-close ui-sref="main.grupoUno">
+                    grupo uno
+                </ion-item>
+                <ion-item menu-close ui-sref="main.miembrosGrupos">
+                    miembros grupos
+                </ion-item>
+                <ion-item menu-close ui-sref="main.chatGrupo">
+                    chat Grupo
+                </ion-item>
+                <ion-item menu-close ui-sref="main.servicios">
+                    Servicios
+                </ion-item>
+                <ion-item menu-close ui-sref="main.cambioCelular">
+                    Cambio celular
+                </ion-item>
+                <ion-item menu-close ui-sref="main.cambiocelularUno">
+                    Cambio celular uno
+                </ion-item>
+                <ion-item menu-close ui-sref="main.cambiocelularDos">
+                    Cambio celular dos
+                </ion-item>
+                <ion-item menu-close ui-sref="main.cambiocelularTres">
+                    Cambio celular tres
+                </ion-item>
+                <ion-item menu-close ui-sref="main.bloquear">
+                    Bloquear
+                </ion-item>
+                <ion-item menu-close ui-sref="main.vistaPrevia">
+               vista previa
+                </ion-item>
+                  <ion-item menu-close ui-sref="main.agregarCuenta">
+               Agregar Cuenta
+                </ion-item>
+                 <ion-item menu-close ui-sref="main.negocio">
+               Negocio
+                </ion-item>
+                   <ion-item menu-close ui-sref="main.videollamada">
+             Videollamada
+                </ion-item>
+                <ion-item menu-close ui-sref="main.modales">
+                    Modales
+                </ion-item>
+                <!-- <ion-item menu-close ui-sref="main.tusNuevos">
+                    Nuevos
+                </ion-item>
+                 <ion-item menu-close ui-sref="main.pacientesAbandonados">
+                    Abandonaron
+                </ion-item>
+                <ion-item menu-close ui-sref="main.ingresos">
+                    Ingresos
+                </ion-item>
+                <ion-item menu-close ui-sref="main.egresos">
+                    Egresos
+                </ion-item>
+                <ion-item menu-close ui-sref="main.totalConsulta">
+                    Total consulta
+                </ion-item>
+                <ion-item menu-close ui-sref="main.totalPacientes">
+                    Total Pacientes
+                </ion-item>-->
+               
+                <ion-item menu-close ui-sref="main.perfilNoBiturbia">
+                    Perfil no bitrubia
+                </ion-item>
+                <ion-item menu-close ui-sref="main.perfil">
+                    Perfil
+                </ion-item>
+                <ion-item menu-close ui-sref="main.agregarConsultorio">
+                    Agregar consultorio
+                </ion-item>
+                <ion-item menu-close ui-sref="main.carreraEducacion">
+                    Carrera Educación
+                </ion-item>
+                <ion-item menu-close ui-sref="main.ecositemaAfiliacion">
+                    Ecositema afiliacion 
+                </ion-item>
+                <ion-item menu-close ui-sref="main.ecositemaEquipo">
+                    Ecositema Equipo 
+                </ion-item>
+                <ion-item menu-close ui-sref="main.expedientesNuevos">
+                    Expedientes Nuevos  
+                </ion-item>
+                <ion-item menu-close ui-sref="main.accesoSeguro">
+                    Acceso seguro 
+                </ion-item>
+                <!--
+                <ion-item menu-close ui-sref="main.consultaAsistenciaremota">
+                    Consulta asistencioa remota
+                </ion-item>
+                <ion-item menu-close ui-sref="main.consultaAsistenciaremota2">
+                    Consulta asistencioa remota2
+                </ion-item>
+                 <ion-item menu-close ui-sref="main.consultaGuardar">
+                   Guardar consulta
+                </ion-item>-->
+                <ion-item menu-close ui-sref="main.consultaExitosa">
+                   Consulta Exitosa
+                </ion-item>
+                <ion-item menu-close ui-sref="main.historialClinico">
+                   Historial clinico
+                </ion-item>
+                <ion-item menu-close ui-sref="main.consulta12">
+                   Consulta 12
+                </ion-item>
+                <ion-item menu-close ui-sref="main.consulta13">
+                   Consulta 13
+                </ion-item>
+                <ion-item menu-close ui-sref="main.consulta15">
+                   Consulta 15
+                </ion-item>
+                <ion-item menu-close ui-sref="main.consulta11">
+                   Consulta 11
+                </ion-item>
+                <!--<ion-item menu-close ui-sref="main.Agenda4">
+                   Agenda4
+                </ion-item>-->
+                <ion-item menu-close ui-sref="main.consulta1">
+                   Consulta 1
+                </ion-item>
+                <ion-item menu-close ui-sref="main.consulta2">
+                   Consulta 2
+                </ion-item>
+                <ion-item menu-close ui-sref="main.nuevaCita">
+                   Nueva cita
+                </ion-item>
+                <!--<ion-item menu-close ui-sref="main.mensaje3">
+                   Mensaje3
+                </ion-item>
+                <ion-item menu-close ui-sref="main.mensaje2">
+                   Mensaje2
+                </ion-item>-->
+                <ion-item menu-close ui-sref="main.comentarios1">
+                   Comentarios1
+                </ion-item>
+                <ion-item menu-close ui-sref="main.comunidad5">
+                   Comunidad5
+                </ion-item>
+                <ion-item menu-close ui-sref="main.comunidad3">
+                   Comunidad3
+                </ion-item>
+                <ion-item menu-close ui-sref="main.comunidad4">
+                   Comunidad4
+                </ion-item>
+                <ion-item menu-close ui-sref="main.comunidad4c">
+                   Comunidad4c
+                </ion-item>
+                <ion-item menu-close ui-sref="main.comunidad8">
+                   Comunidad8
+                </ion-item>
+                <ion-item menu-close ui-sref="main.donaciones3">
+                   Donaciones3
+                </ion-item>
+                <ion-item menu-close ui-sref="main.donaciones4">
+                   Donaciones4
+                </ion-item>
+                <ion-item menu-close ui-sref="main.terminosCondiciones">
+                   Terminos y Condiciones
+                </ion-item>
+                <ion-item menu-close ui-sref="main.mensaje4">
+                   Mensaje 4
+                </ion-item>
+                <ion-item menu-close ui-sref="main.notas1">
+                   Notas 1
+                </ion-item>
+                <ion-item menu-close ui-sref="main.opinion2">
+                   Opinion2
+                </ion-item>
+                <ion-item menu-close ui-sref="main.perfil3">
+                   Perfil3
+                </ion-item>
+                <ion-item menu-close ui-sref="main.perfil6">
+                   Perfil6
+                </ion-item>
+               <!-- <ion-item menu-close ui-sref="main.defuncion1">
+                   Defuncion1
+                </ion-item>
+                <ion-item menu-close ui-sref="main.defuncion2">
+                   Defuncion2
+                </ion-item>
+                <ion-item menu-close ui-sref="main.perfilPopup">
+                   Perfil Popup
+                </ion-item>
+                <!--<ion-item menu-close ui-sref="main.beatsPopup">
+                   Beats popup
+                </ion-item>
+                <ion-item menu-close ui-sref="main.popup1">
+                   popup1
+                </ion-item>-->
+                 <ion-item menu-close ui-sref="main.seguimiento1">
+                   Seguimiento1
+                </ion-item>
+                <ion-item menu-close ui-sref="main.registro2">
+                   Registro2
+                </ion-item>
+                
+                 <!--<ion-item menu-close ui-sref="main.registro3a">
+                   Registro3 a
+                </ion-item>-->
+                <ion-item menu-close ui-sref="main.registro4">
+                   Registro4
+                </ion-item>
+                <ion-item menu-close ui-sref="main.videoconsulta2">
+                   Video consulta 2
+                </ion-item>
+                 <ion-item menu-close ui-sref="main.videoconsulta4">
+                   Video consulta 4
+                </ion-item>
+                <ion-item menu-close ui-sref="main.videoconsulta5">
+                   Video consulta 5
+                </ion-item>
+                <ion-item menu-close ui-sref="main.videoconsulta6">
+                   Video consulta 6
+                </ion-item>
+                <ion-item menu-close ui-sref="main.videoconsulta11">
+                   Video consulta 11
+                </ion-item>
+                 <ion-item menu-close ui-sref="main.videoconsulta12">
+                   Video consulta 12
+                </ion-item>
+                <ion-item menu-close ui-sref="main.videoconsulta15">
+                   Video consulta 15
+                </ion-item>
+                <ion-item menu-close ui-sref="main.videoconsulta15a">
+                   Video consulta 15a
+                </ion-item>
+                 <ion-item menu-close ui-sref="main.videoconsulta16">
+                   Video consulta 16
+                </ion-item>
+                <ion-item menu-close ui-sref="main.videoconsulta13">
+                   Video consulta 13
+                </ion-item>
+                <ion-item menu-close ui-sref="main.videoconsulta18">
+                   Video consulta 18
+                </ion-item>
+                <ion-item menu-close ui-sref="main.videoconsulta17">
+                   Video consulta 17
+                </ion-item>
+                <ion-item menu-close ui-sref="main.videoconsulta19">
+                   Video consulta 19
+                </ion-item>
+
+            </ion-list>
+        </ion-content>
+
+    </ion-side-menu>
+
+</ion-side-menus>

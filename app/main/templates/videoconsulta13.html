@@ -1,0 +1,99 @@
+<ion-view view-title="main module">
+  <ion-nav-buttons side="right">
+    <div class="btn-videollamada">
+      <img class="block" src="main/assets/images/icono/117_2.png" width="20px" alt="">
+    </div>
+  </ion-nav-buttons>
+  <ion-header-bar class="bar bar-subheader" style="height:60px;">
+    <ul class="row miTab1" align="center">
+      <li class="col33" ng-click="tabUnofn()">
+        <div><img src="main/assets/images/icono/notas-publicas-az.png" class="hvr-grow" width="20px;"></div>
+        <a href="">Públicas</a> 
+      </li>
+      <li class="col33" ng-click="tabDosfn()">
+        <div><img src="main/assets/images/icono/notas-privadas-az.png" class="hvr-grow" width="20px;"></div>
+        <a href="">Privadas</a> 
+      </li>
+      <li class="col33 active" ng-click="tabTresfn()">
+        <div><img src="main/assets/images/icono/historico-recetas-azul.png" class="hvr-grow" width="20px;"></div>
+        <a href="">Recetas</a> 
+      </li>
+    </ul>
+  </ion-header-bar>
+  <!-- do you want padding? -->
+  <ion-content class="" style="top: 95px;">
+    
+    <div ng-show="tabU">
+      <div class="row">
+        <div class="padding10 mt20">
+          <br>
+          <label class="item-input-wrapper">
+            <textarea rows="10" cols="50" name="" id="" placeholder="Comienza a escribir tus notas" class="" style="width:100%"></textarea>
+          </label>
+        </div>
+      </div>
+      <ion-footer-bar keyboard-attach  style="button:12px;">
+        <div class="row row-center">
+          <div class="col-75">
+            <div class="fontAzul text-right">Vista previa</div>
+          </div>
+          <div class="col-25 text-right">
+            <button ui-sref="main.home" class="button28 bloque2 hvr-float-shadow" href="#/main/home">
+            <img class="mlrauto block" src="main/assets/images/icono/87.png" width="20px" alt=""></button>
+          </div>
+        </div>
+      </ion-footer-bar>
+    </div>
+    <div ng-show="tabD"><br>
+      <div class="backVerde padding10 pt20 pb20 margin10 mt20">
+        <p class="text-center fontBlanco">Información confidencial</p>
+      </div>
+      <div class="pico"></div>
+
+    <div class="row">
+        <div class="padding10 mt20">
+          <br>
+          <label class="item-input-wrapper">
+            <textarea rows="10" cols="50" name="" id="" placeholder="Comienza a escribir tus notas" class="" style="width:100%"></textarea>
+          </label>
+        </div>
+      </div>
+      <ion-footer-bar keyboard-attach  style="button:12px;">
+        <div class="row row-center">
+          <div class="col-75">
+            <div class="fontAzul text-right">Vista previa</div>
+          </div>
+          <div class="col-25 text-right">
+            <button ui-sref="main.home" class="button28 bloque2 hvr-float-shadow" href="#/main/home">
+            <img class="mlrauto block" src="main/assets/images/icono/87.png" width="20px" alt=""></button>
+          </div>
+        </div>
+      </ion-footer-bar>
+
+
+    </div>
+    <div ng-show="tabT">
+      <div class="row">
+        <div class="padding10 mt20">
+          <br>
+          <label class="item-input-wrapper">
+            <textarea rows="10" cols="50" name="" id="" placeholder="Comienza a escribir tus notas" class="" style="width:100%"></textarea>
+          </label>
+        </div>
+      </div>
+      <ion-footer-bar keyboard-attach  style="button:12px;">
+        <div class="row row-center">
+          <div class="col-75">
+            <div class="fontAzul text-right">Vista previa</div>
+          </div>
+          <div class="col-25 text-right">
+            <button ui-sref="main.home" class="button28 bloque2 hvr-float-shadow" href="#/main/home">
+            <img class="mlrauto block" src="main/assets/images/icono/87.png" width="20px" alt=""></button>
+          </div>
+        </div>
+      </ion-footer-bar>
+    </div>
+    <!-- content goes here -->
+    
+  </ion-content>
+</ion-view>

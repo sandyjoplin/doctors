@@ -1,0 +1,165 @@
+<ion-view view-title="Agenda cita">
+    <ion-nav-buttons side="right">
+        <div class="btn-videollamada">
+            <img class="block" src="main/assets/images/icono/117_1.png" width="20px" alt="">
+        </div>
+        <div>
+            <span class="fontBlanco relative"><span class="count">1</span><img src="main/assets/images/icono/102.png" style="width:30px;margin:0 0 0px 0" alt=""></span>
+        </div>
+        <img src="main/assets/images/bit2.png" style="height:20px;margin:0px 5px 6px 5px" alt="">
+    </ion-nav-buttons>
+    <ion-content class="backCrema">
+        <div class="backBlanco">
+            <div class="row padding10 margin10B">
+                <div class="col-25"> </div>
+                <div class="col-50" align="center">
+                    <div class="backImg5"> <img src="main/assets/images/perfil1.jpg" class="img4" alt=""> </div>
+                </div>
+                <div class="col-25"> </div>
+            </div>
+            <ul class="row miTab2" align="center">
+                <li class="col33" ng-click="tabUnofn()">
+                    <a> <img src="main/assets/images/icono/46.png" width="20px" class="hvr-grow">
+                        <br>
+                    </a>
+                </li>
+                <li class="col33" ng-click="tabDosfn()">
+                    <a> <img src="main/assets/images/icono/9.png" width="20px" class="hvr-grow">
+                        <br>
+                    </a>
+                </li>
+                <li class="col33" ng-click="tabTresfn()">
+                    <a> <img src="main/assets/images/icono/169.png" width="20px" class="hvr-grow">
+                        <br> </a>
+                </li>
+            </ul>
+        </div>
+        <div ng-show="tabU">
+            <div class="backBlanco padding10Top">
+                <div class="backVerde margin10Top">
+                    <p class="fontBlanco1 text-center">Elige el consultorio en donde quieres que te atienda</p>
+                </div>
+                <div class="backVerde" style="height:200px">
+                    <h1 class="text-center">MAPA</h1> </div>
+            </div>
+        </div>
+        <div ng-show="tabD">
+            <div class="backBlanco">
+                <div class="padding10">
+                    <br>
+                    <p class="fontAzul1 text-center"><u>Hospital Ángeles del Pedregal</u></p>
+                    <!--aqui despliega modal 10 de agendar cita de la  vista modales --->
+                    <br>
+                    <p class="fontVerde text-center">Horarios disponibles </p>
+                </div>
+                <div class="backGris1 padding10">
+                    <div class="row row-center" align="center">
+                        <div class="col-20"> <img src="main/assets/images/icono/25.png" width="15px" class="hvr-grow"> </div>
+                        <div class="col-20">
+                            <p class="fontGris2">febrero</p>
+                        </div>
+                        <div class="col-20">
+                            <p class="fontAzul">marzo</p>
+                        </div>
+                        <div class="col-20">
+                            <p class="fontGris2">abril</p>
+                        </div>
+                        <div class="col-20"> <img src="main/assets/images/icono/24.png" width="15px" class="hvr-grow"> </div>
+                    </div>
+                </div>
+                <div class="row padding10">
+                    <div class="row row-center" align="center">
+                        <div class="col-20"> <img src="main/assets/images/icono/25.png" width="15px" class="hvr-grow"> </div>
+                        <div class="col-20">
+                            <p class="fontGris5">14</p>
+                            <p class="fontGris2">Jueves</p>
+                        </div>
+                        <div class="col-20">
+                            <p class="fontAzul7">28</p>
+                            <p class="fontAzul5">Martes</p>
+                        </div>
+                        <div class="col-20">
+                            <p class="fontGris5">16</p>
+                            <p class="fontGris2">Jueves</p>
+                        </div>
+                        <div class="col-20"> <img src="main/assets/images/icono/24.png" width="15px" class="hvr-grow"> </div>
+                    </div>
+                </div>
+                <div class=" backVerde row padding10">
+                    <div class="row row-center" align="center">
+                        <div class="col-20"> <img src="main/assets/images/icono/165.png" width="15px" class="hvr-grow"> </div>
+                        <div class="col-20">
+                            <p class="fontBlanco6">9:00 h</p>
+                        </div>
+                        <div class="col-20">
+                            <p class="fontBlanco1">13:00 h</p>
+                        </div>
+                        <div class="col-20">
+                            <p class="fontBlanco6">9:00 h</p>
+                        </div>
+                        <div class="col-20"> <img src="main/assets/images/icono/166.png" width="15px" class="hvr-grow"> </div>
+                    </div>
+                </div>
+                <div align="center">
+                    <button class="button3 bloque2 hvr-float-shadow"><img src="main/assets/images/icono/87.png" width="20px" alt=""></button>
+                </div>
+            </div>
+        </div>
+        <div ng-show="tabT">
+            <div class="backBlanco">
+                <div class="padding10">
+                    <p class="fontAzul text-center">Dime el motivo de la sesión</p>
+                </div>
+                <div style="height:100px;">
+                    <label class="item-input-wrapper">
+                        <textarea name="" id="" placeholder="Aquí puedes escribir" class="" style="width:100%"></textarea>
+                    </label>
+                </div>
+            </div>
+            <div class="backBlanco">
+                <div class="padding10Top">
+                    <p class="fontAzul text-center">Elige tu método de pago</p>
+                </div>
+                <div class="pico4"> </div>
+                <br>
+                <div class="figura">
+                    <div class="row padding10" align="center">
+                        <div class="col-33">
+                            <div class="hvr-grow">
+                                <img src="main/assets/images/icono/170.png" width="35px">
+                                <p class="fontBlanco7">Paypal</p>
+                            </div>
+                        </div>
+                        <div class="col-33">
+                            <div class="hvr-grow">
+                                <img src="main/assets/images/icono/171.png" width="35px">
+                                <p class="fontBlanco7">Tarjeta</p>
+                            </div>
+                        </div>
+                        <div class="col-33">
+                            <div class="hvr-grow">
+                                <img src="main/assets/images/icono/172.png" width="35px">
+                                <p class="fontBlanco7">Otros</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row padding10 hide">
+                        <div class="col-80"> <img src="main/assets/images/icono/70.png" class="alignV" width="20px" alt=""> <span class="fontBlanco7 alignV"> Ingresa tu tarjeta de pago</span> </div>
+                        <div class="col-20"> <img src="main/assets/images/icono/166.png" class="derecha alignV" width="15px" alt=""> </div>
+                    </div>
+                </div>
+                <div class="padding10">
+                    <div class="padding5Top">
+                        <label for="" class="checkbox checkbox-circle alignV">
+                            <input type="checkbox" class="miCheck checkbox-circle" name="" value=""> </label> <span class="fontNegro9 alignV">Acepto aviso de privacidad</span> </div>
+                    <div class="padding5Top">
+                        <label for="" class="checkbox checkbox-circle alignV">
+                            <input type="checkbox" class="miCheck checkbox-circle" name="" value=""> </label> <span class="fontNegro9 alignV">Acepto términos y condiciones</span> </div>
+                </div>
+                <div align="center">
+                    <button ui-sref="main.conocenos" class="button3 bloque2 hvr-float-shadow"><img src="main/assets/images/icono/87.png" width="20px" alt=""></button>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

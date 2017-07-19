@@ -1,0 +1,147 @@
+<ion-view view-title="Tarjeta">
+    <ion-nav-buttons side="right">
+        <div class="btn-videollamada">
+            <img class="block" src="main/assets/images/icono/117_1.png" width="20px" alt="">
+        </div>
+        <div>
+        <span class="fontBlanco relative">
+            <span class="count">1</span>
+            <img src="main/assets/images/icono/102.png" style="width:30px;margin:0 0 0px 0" alt="">
+        </span> 
+        </div>
+        <img src="main/assets/images/bit2.png" style="height:20px;margin:0px 5px 6px 5px" alt="">
+    </ion-nav-buttons>
+    <ion-content>
+        <ul class="row miTab1" align="center">
+            <li class="col50 miTab-item" ng-click="cambiarTabUno()">
+                <div><img src="main/assets/images/icono/11.png" class="hvr-grow" width="20px;"></div><a href="">Tarjetas</a></li>
+            <li class="col50 miTab-item" ng-click="cambiarTabUno()">
+                <div><img src="main/assets/images/icono/12.png" class="hvr-grow" width="20px;"></div><a href="">Cuentas </a></li>
+        </ul>
+        <div class="" ng-show="tabUno">
+            <div class="backTarjeta1 widthTarjeta padding20 animated fadeInUp">
+                <div class="row bloque12">
+                    <p class="fontBlanco padding10Lef">Personal</p>
+                </div>
+                <div class="row" style="margin:40px 0 25px 0;" align="center">
+                    <div class="col-25">
+                        <div class="circulo"></div>
+                        <div class="circulo"></div>
+                        <div class="circulo"></div>
+                        <div class="circulo"></div>
+                    </div>
+                    <div class="col-25">
+                        <div class="circulo"></div>
+                        <div class="circulo"></div>
+                        <div class="circulo"></div>
+                        <div class="circulo"></div>
+                    </div>
+                    <div class="col-25">
+                        <div class="circulo"></div>
+                        <div class="circulo"></div>
+                        <div class="circulo"></div>
+                        <div class="circulo"></div>
+                    </div>
+                    <div class="col-25">
+                        <p class="fontBlanco1">1234</p>
+                    </div>
+                </div>
+                <div class="row padding10" align="center">
+                    <div class="col-25">
+                        <img src="main/assets/images/icono/110.png" width="25px; " alt="">
+                    </div>
+                    <div class="col-25">
+                        <p class="fontBlanco1">01/16</p>
+                        <p class="fontBlanco">Vigencia</p>
+                    </div>
+                    <div class="col-25">
+                    </div>
+                    <div class="col-25">
+                        <img src="main/assets/images/icono/141.png" width="25px; " alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="backTarjeta3 widthTarjeta padding20 animated fadeInUp">
+                <div class="row bloque12">
+                    <p class="fontBlanco padding10Lef">Trabajo</p>
+                </div>
+                <div class="row" style="margin:40px 0 25px 0;" align="center">
+                    <div class="col-25">
+                        <div class="circulo"></div>
+                        <div class="circulo"></div>
+                        <div class="circulo"></div>
+                        <div class="circulo"></div>
+                    </div>
+                    <div class="col-25">
+                        <div class="circulo"></div>
+                        <div class="circulo"></div>
+                        <div class="circulo"></div>
+                        <div class="circulo"></div>
+                    </div>
+                    <div class="col-25">
+                        <div class="circulo"></div>
+                        <div class="circulo"></div>
+                        <div class="circulo"></div>
+                        <div class="circulo"></div>
+                    </div>
+                    <div class="col-25">
+                        <p class="fontBlanco1">1234</p>
+                    </div>
+                </div>
+                <div class="row padding10" align="center">
+                    <div class="col-25">
+                        <img src="main/assets/images/icono/110.png" width="25px; " alt="">
+                    </div>
+                    <div class="col-25">
+                        <p class="fontBlanco1">01/16</p>
+                        <p class="fontBlanco">Vigencia</p>
+                    </div>
+                    <div class="col-25">
+
+                    </div>
+                    <div class="col-25">
+                        <img src="main/assets/images/icono/141.png" width="25px; " alt="">
+                    </div>
+                </div>
+            </div>
+            <div align="center">
+                <div class="bloque1">
+                    <img ui-sref="main.nuevaTarjeta" class="hvr-grow" src="main/assets/images/icono/55.png" width="35px;" alt="">
+                </div><br>
+            </div>
+        </div>
+        <div ng-show="tabdos">
+       <div class="padding10">
+            <div class="row padding10Top">
+                <div class="col-10">
+                    <img src="main/assets/images/icono/12.png" width="20px" alt="" class="hvr-grow">
+                </div>
+                <div class="col-80">
+                    <p class="fontNegro">0000 0000 0000 0000 00</p>
+                </div>
+                <div class="col-10">
+                    <img src="main/assets/images/icono/24.png" width="20px" class="derecha" alt="">
+                </div>
+            </div>
+            <div class="divider3"></div>
+            <div class="row padding10Top" >
+                <div class="col-10">
+                    <img src="main/assets/images/icono/12.png" width="20px" alt="" class="hvr-grow">
+                </div>
+                <div class="col-80">
+                    <p class="fontNegro">0000 0000 0000 0000 00</p>
+                </div>
+                <div class="col-10">
+                    <img src="main/assets/images/icono/24.png" width="20px" class="derecha" alt="">
+                </div>
+            </div>
+            <div class="divider3"></div>
+        </div>
+         <div align="center"><br>
+                <div class="bloque">
+                    <img ui-sref="main.agregarCuenta" src="main/assets/images/icono/55.png" class="hvr-grow" width="35px;" alt="">
+                </div><br>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

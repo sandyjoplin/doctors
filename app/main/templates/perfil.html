@@ -1,0 +1,748 @@
+<ion-view view-title="Perfil">
+  <ion-nav-buttons side="right">
+  <div class="btn-videollamada">
+  <img class="block" src="main/assets/images/icono/117_1.png" width="20px" alt="">
+  </div>
+      <div>
+        <span class="fontBlanco relative"><span class="count">1</span><img src="main/assets/images/icono/102.png" style="width:30px;margin:0 0 0px 0" alt=""></span> 
+      </div>
+      <img src="main/assets/images/bit2.png" style="height:20px;margin:0px 5px 6px 5px" alt="">
+    </ion-nav-buttons>
+    <!-- do you want padding? -->
+    <ion-header-bar class="bar bar-subheader">
+      <ul class="row miTab1 menu-perfil" align="center">
+        <li class="col25" ng-click="tabUnofn()"><a href="">Presentación</a> </li>
+        <li class="col25" ng-click="tabDosfn()"><a href="">Carrera</a> </li>
+        <li class="col25 active" ng-click="tabTresfn()"><a href="">Ecosistema</a> </li>
+        <li class="col25" ng-click="tabCuatrofn()"><a href="">Servicio</a> </li>
+      </ul>
+    </ion-header-bar>
+    <ion-content>
+      <div ng-show="tabU">
+        <ion-header-bar class="backPerfil1 hedader-perfil">
+          <div class="row" style="width: 100%;">
+            <div class="col-25"><p class="fontGris4" style="margin: 81px 15px 0 5px; width: 103px;">Ciudad de méxico</p></div>
+            <div class="col-50" align="center">
+              <div class="imgContent1 backImg4">
+                <img src="main/assets/images/perfil1.jpg" class="img10" alt=""> 
+              </div>
+              <p class="fontGris4">75%</p>
+              <p class="fontGris4">Cristian muñis</p>
+            </div>
+            <div class="col-25"> </div>
+            <!--despliega modal reporta de vista modales-->
+          </div>
+        </ion-header-bar><br>
+        <div class="padding main-content-perfil">
+          <div class="content-dropdown mb20">
+            <div class="row row-center item-stable pt20 pb20" ng-click="toggleGroup(1)" ng-class="{active: isGroupShown(1)}">
+              <div class="col-10">
+                <img src="main/assets/images/icono/29.png" class="derecha hvr-grow" width="20px">
+              </div>
+              <div class="col-75 padding10Lef">
+                <p class="fontAzul">Datos Personales</p>
+              </div>
+              <div class="col-10" align="center">
+                <img src="main/assets/images/icono/{{isGroupShown(1) ? 165 : 23 }}.png" class="derecha arrow hvr-grow" ng-class="{arrowup: isGroupShown(1)}" width="15px" alt="">
+                <!-- <img ng-show="isGroupShown(1)" src="main/assets/images/icono/165.png" class="derecha arrow arrowup" width="15px" alt="">-->
+              </div>
+            </div>
+            <div class="item-accordion" ng-show="isGroupShown(1)">
+              <div class="padding">
+                <label class="item-input-wrapper margin20Top">
+                  <img src="main/assets/images/icono/1.png" class="img1 hvr-grow" alt="">
+                  <input type="text" placeholder="Usuario" class="miInput">
+                </label>
+                <label class="item-input-wrapper margin20Top">
+                  <input type="text" placeholder="Primer apellido" class="miInput" style="margin-left:30px;">
+                </label>
+                <label class="item-input-wrapper margin20Top">
+                  <input type="text" placeholder="Segundo apellido" class="miInput" style="margin-left:30px;">
+                </label>
+                <label class="item-input-wrapper margin20Top">
+                  <img src="main/assets/images/icono/223.png" class="img1 hvr-grow" alt="">
+                  <p class="fontGris3">Sexo</p>
+                </label>
+                <div class="row margin20Top">
+                  <div class="col-50" align="center">
+                    <label for="" class="checkbox checkbox-circle alignV">
+                      <input type="checkbox" class="miCheck checkbox-circle" name="" value="">
+                    </label>
+                    <span class="fontGris alignV">Mujer</span>
+                  </div>
+                  <div class="col-50" align="center">
+                    <label for="" class="checkbox checkbox-circle alignV">
+                      <input type="checkbox" class="miCheck checkbox-circle" name="" value="">
+                    </label>
+                    <span class="fontGris alignV">Hombre</span>
+                  </div>
+                </div>
+                <label class="item-input-wrapper margin20Top">
+                  <img src="main/assets/images/icono/4.png" class="img1 hvr-grow" alt="">
+                  <input type="text" placeholder="Fecha de nacimiento" class="miInput dateInput">
+                </label>
+                <label class="item-input-wrapper margin20Top">
+                  <img src="main/assets/images/icono/204.png" class="img1 hvr-grow" alt="">
+                  <input type="text" placeholder="Idioma" class="miInput dateInput">
+                </label>
+
+              </div>
+            </div>
+          </div>
+          <div class="content-dropdown mb20">
+            <div class="row row-center item-stable pt20 pb20" ng-click="toggleGroup(2)" ng-class="{active: isGroupShown(2)}">
+              <div class="col-10">
+                <img src="main/assets/images/icono/60.png" class="derecha hvr-grow" width="20px">
+              </div>
+              <div class="col-75 padding10Lef">
+                <p class="fontAzul">Consultorio (s)</p>
+              </div>
+              <div class="col-10" align="center">
+                <img src="main/assets/images/icono/{{isGroupShown(2) ? 165 : 23 }}.png" class="derecha arrow hvr-grow" ng-class="{arrowup: isGroupShown(2)}" width="15px" alt="">
+                <!-- <img ng-show="isGroupShown(2)" src="main/assets/images/icono/165.png" class="derecha arrow arrowup" width="15px" alt="">-->
+              </div>
+            </div>
+            <div class="item-accordion" ng-show="isGroupShown(2)">
+             <label class="item-input-wrapper margin20Top" ui-sref="main.agregarConsultorio">
+                <div class="col-10">
+                  <img src="main/assets/images/icono/192.png" class="derecha hvr-grow" width="25px" alt="">
+                </div>
+                <div class="col-80 padding10Lef">
+                  <p class="fontNegro13">Agrega consultorio</p>
+                </div>
+                <div class="col-10" align="center">
+                  <img src="main/assets/images/icono/127.png" style="width: 10px;margin-bottom: 7px;" alt="" class="hvr-grow">
+                </div>
+              </label> 
+              <label class="item-input-wrapper margin20Top">
+                <div class="col-10">
+                  <img src="main/assets/images/icono/133.png" class="derecha hvr-grow" width="20px" alt="">
+                </div>
+                <div class="col-80 padding10Lef">
+                  <p class="fontNegro13">Horarios</p>
+                </div>
+                <div class="col-10" align="center">
+                  <img src="main/assets/images/icono/127.png" style=" width: 10px;margin-bottom: 7px;" alt="" class="hvr-grow">
+                </div>
+              </label> 
+              <div class="text-center bt1 pt20">
+              <img src="main/assets/images/icono/55.png" class="hvr-grow" width="35px"/>
+            
+              </div><br>
+            </div>
+        </div>
+
+        <div class="content-dropdown mb20">
+          <div class="row row-center item-stable pt20 pb20" ng-click="toggleGroup(3)" ng-class="{active: isGroupShown(3)}">
+            <div class="col-10">
+              <img src="main/assets/images/icono/5.png" class="derecha hvr-grow" width="20px" alt="">
+            </div>
+            <div class="col-75 padding10Lef">
+              <p class="fontAzul">Contacto</p>
+            </div>
+            <div class="col-10" align="center">
+              <img src="main/assets/images/icono/{{isGroupShown(3) ? 165 : 23 }}.png" class="derecha arrow hvr-grow" ng-class="{arrowup: isGroupShown(3)}" width="15px" alt="">
+              <!--<img ng-show="isGroupShown(3)" src="main/assets/images/icono/165.png" class="derecha arrow arrowup" width="15px" alt="">-->
+            </div>
+          </div>
+          <div class="item-accordion" ng-show="isGroupShown(3)">
+           <form action="" class="">
+            <div class="row padding10">
+              <div class="col-100 list"> 
+                <label class="item-input-wrapper margin20Top">
+                  <img src="main/assets/images/icono/283.png" class="img1 hvr-grow" alt="">
+                  <input type="text" placeholder="Telefono" class="miInput">
+                </label>
+                <label class="item-input-wrapper margin20Top">
+                  <img src="main/assets/images/icono/5.png" class="img1 hvr-grow" alt="">
+                  <input type="text" placeholder="Celular" class="miInput">
+                </label>
+                <label class="item-input-wrapper margin20Top">
+                  <img src="main/assets/images/icono/6.png" class="img1 hvr-grow" alt="">
+                  <input type="text" placeholder="Correo" class="miInput">
+                </label>
+                <label class="item-input-wrapper margin20Top">
+                  <input type="text" placeholder="Otro" class="miInput" style="margin-left:30px;">
+                </label>
+              </div>
+            </div>
+            <div align="center">
+              <button ui-sref="main.perfil" class="button3 bloque2 hvr-float-shadow">
+                <img src="main/assets/images/icono/87.png" width="20px" alt=""></button>
+              </div>
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    <div ng-show="tabD" class="padding">
+
+      <div class="content-dropdown mb20">
+        <div class="row row-center item-stable pt20 pb20" ng-click="toggleGroup(1)" ng-class="{active: isGroupShown(1)}">
+          <div class="col-10">
+            <img src="main/assets/images/icono/56.png" class="derecha hvr-grow" width="20px">
+          </div>
+          <div class="col-75 padding10Lef">
+            <p class="fontAzul">Educación</p>
+          </div>
+          <div class="col-10" align="center">
+            <img src="main/assets/images/icono/{{isGroupShown(1) ? 165 : 23 }}.png" class="derecha arrow hvr-grow" ng-class="{arrowup: isGroupShown(1)}" width="15px" alt="">
+            <!-- <img ng-show="isGroupShown(2)" src="main/assets/images/icono/165.png" class="derecha arrow arrowup" width="15px" alt="">-->
+          </div>
+
+        </div>
+        <div class="item-accordion" ng-show="isGroupShown(1)">
+          <label class="item-input-wrapper margin20Top">
+            <img src="main/assets/images/icono/56.png" class="img1 hvr-grow" alt="">
+            <input type="text" placeholder="Profesión" class="miInput">
+          </label>
+          <label class="item-input-wrapper margin20Top">
+            <input type="text" placeholder="Titulo" class="miInput" style="margin-left:30px;">
+          </label>
+          <div class="b10-ddd">
+
+            <label class="item-input-wrapper margin20Top relative">
+              <img src="main/assets/images/icono/57.png" class="hvr-grow" width="20px" alt="">
+              <select name="" id="" class="miselect5 miInput">
+                <option value="">Especialidad</option>
+                <option value="">Medico</option>
+                <option value="">enfermera</option>
+              </select>
+              <div class="arrow-select"><img class="img" src="main/assets/images/icono/23.png" /></div>
+
+            </label>
+            <label class="item-input-wrapper margin20Top">
+              <input type="text" placeholder="Titulo" class="miInput" style="margin-left:30px;">
+            </label>
+            <label class="item-input-wrapper margin20Top">
+              <input type="text" placeholder="Institución" class="miInput" style="margin-left:30px;">
+            </label>
+            <label class="item-input-wrapper margin20Top relative">
+              <input type="text" placeholder="Cedula de especialidad" class="miInput relative input7">
+              <div class="camara"><img src="main/assets/images/icono/211.png" class="img1 hvr-grow" alt=""></div>
+            </label>
+            <label class="item-input-wrapper margin20Top relative content-select1">
+              <select name="" id="" class="miselect5 miInput">
+                <option value="">País</option>
+                <option value="">méxico</option>
+                <option value="">eu</option>
+              </select>
+              <div class="arrow-select"><img class="img" src="main/assets/images/icono/23.png" /></div>
+
+            </label>
+            <label class="item-input-wrapper margin20Top relative content-select2">
+              <select name="" id="" class="miselect5 miInput">
+                <option value="">Año</option>
+                <option value="">Medico</option>
+                <option value="">enfermera</option>
+              </select>
+              <div class="arrow-select"><img class="img" src="main/assets/images/icono/23.png" /></div>
+            </label>
+
+
+          </div>
+
+
+        </div>
+        <div class="text-center bt1 pt20">
+        <img src="main/assets/images/icono/55.png" class="hvr-grow" width="35px" />
+        </div>
+<br>
+      </div>
+      <div class="content-dropdown mb20">
+        <div class="row row-center item-stable pt20 pb20" ng-click="toggleGroup(2)" ng-class="{active: isGroupShown(2)}">
+          <div class="col-10">
+            <img src="main/assets/images/icono/217.png" class="derecha hvr-grow" width="20px" alt="">
+          </div>
+          <div class="col-75 padding10Lef">
+            <p class="fontAzul">Experiencia</p>
+          </div>
+          <div class="col-10" align="center">
+            <img src="main/assets/images/icono/{{isGroupShown(2) ? 165 : 23 }}.png" class="derecha arrow hvr-grow" ng-class="{arrowup: isGroupShown(2)}" width="15px" alt="">
+            <!-- <img ng-show="isGroupShown(2)" src="main/assets/images/icono/165.png" class="derecha arrow arrowup" width="15px" alt="">-->
+          </div>
+        </div>
+        <div class="item-accordion" ng-show="isGroupShown(2)">
+         <label class="item-input-wrapper margin20Top">
+          <input type="text" placeholder="Titulo o puesto" class="miInput" style="margin-left:30px;">
+        </label>
+        <label class="item-input-wrapper margin20Top">
+          <input type="text" placeholder="Institución o empresa" class="miInput" style="margin-left:30px;">
+        </label>
+        <label class="item-input-wrapper margin20Top relative">
+          <input type="text" placeholder="País" class="miInput relative input7">
+        </label>
+        <label class="item-input-wrapper margin20Top relative content-select1">
+          <select name="" id="" class="miselect5 miInput">
+            <option value="">De</option>
+            <option value="">méxico</option>
+            <option value="">eu</option>
+          </select>
+          <div class="arrow-select">
+          <img class="img hvr-grow" src="main/assets/images/icono/23.png" />
+          </div>
+
+        </label>
+        <label class="item-input-wrapper margin20Top relative content-select2">
+          <select name="" id="" class="miselect5 miInput">
+            <option value="">Hasta</option>
+            <option value="">Medico</option>
+            <option value="">enfermera</option>
+          </select>
+          <div class="arrow-select hvr-grow"><img class="img" src="main/assets/images/icono/23.png" /></div>
+        </label>
+
+      </div>
+      <div class=" text-center bt1 pt20">
+      <img src="main/assets/images/icono/55.png" width="35px" class="hvr-grow"/>
+      </div>
+<br>
+    </div>
+    <div class="content-dropdown mb20">
+      <div class="row row-center item-stable pt20 pb20" ng-click="toggleGroup(3)" ng-class="{active: isGroupShown(3)}">
+        <div class="col-10">
+          <img src="main/assets/images/icono/57.png" class="derecha hvr-grow" width="20px" alt="">
+        </div>
+        <div class="col-75 padding10Lef">
+          <p class="fontAzul">Condecoraciones</p>
+        </div>
+        <div class="col-10" align="center">
+          <img src="main/assets/images/icono/{{isGroupShown(3) ? 165 : 23 }}.png" class="derecha arrow hvr-grow" ng-class="{arrowup: isGroupShown(3)}" width="15px" alt="">
+          <!-- <img ng-show="isGroupShown(2)" src="main/assets/images/icono/165.png" class="derecha arrow arrowup" width="15px" alt="">-->
+        </div>
+      </div>
+      <div class="item-accordion" ng-show="isGroupShown(3)">
+
+        <label class="item-input-wrapper margin20Top">
+          <input type="text" placeholder="Titulo" class="miInput" style="margin-left:30px;">
+        </label>
+        <label class="item-input-wrapper margin20Top">
+          <input type="text" placeholder="Institución" class="miInput" style="margin-left:30px;">
+        </label>
+        <label class="item-input-wrapper margin20Top relative content-select1">
+          <select name="" id="" class="miselect5 miInput">
+            <option value="">País</option>
+            <option value="">méxico</option>
+            <option value="">eu</option>
+          </select>
+          <div class="arrow-select"><img class="img hvr-grow" src="main/assets/images/icono/23.png" /></div>
+
+        </label>
+        <label class="item-input-wrapper margin20Top relative content-select2">
+          <select name="" id="" class="miselect5 miInput">
+            <option value="">Año</option>
+            <option value="">Medico</option>
+            <option value="">enfermera</option>
+          </select>
+          <div class="arrow-select"><img class="img hvr-grow" src="main/assets/images/icono/23.png" /></div>
+        </label>
+
+      </div>
+      <div class="text-center bt1 pt20" ng-show="!isGroupShown(3)"><img src="main/assets/images/icono/55.png" width="35px" class="hvr-grow" /></div><br>
+      <div class=" text-center bt1 pt20 pb20" ng-show="isGroupShown(3)">
+      <button class="button3 margin10 hvr-float-shadow"><img src="main/assets/images/icono/87.png" width="20px" alt="" class="alignV"></button>
+      </div>
+
+    </div>
+    <div class="content-dropdown mb20">
+      <div class="row row-center item-stable pt20 pb20" ng-click="toggleGroup(4)" ng-class="{active: isGroupShown(4)}">
+        <div class="col-10">
+          <img src="main/assets/images/icono/262.png" class="derecha hvr-grow" width="20px" alt="">
+        </div><br>
+        <div class="col-75 padding10Lef">
+          <p class="fontAzul">Voluntariado</p>
+        </div>
+        <div class="col-10" align="center">
+          <img src="main/assets/images/icono/{{isGroupShown(4) ? 165 : 23 }}.png" class="derecha arrow hvr-grow" ng-class="{arrowup: isGroupShown(4)}" width="15px" alt="">
+          <!-- <img ng-show="isGroupShown(2)" src="main/assets/images/icono/165.png" class="derecha arrow arrowup" width="15px" alt="">-->
+        </div>
+        
+      </div>
+      <div class="item-accordion" ng-show="isGroupShown(4)">
+        <label class="item-input-wrapper margin20Top">
+          <input type="text" placeholder="Titulo" class="miInput" style="margin-left:30px;">
+        </label>
+        <label class="item-input-wrapper margin20Top">
+          <input type="text" placeholder="Institución" class="miInput" style="margin-left:30px;">
+        </label>
+        <label class="item-input-wrapper margin20Top relative content-select1">
+          <select name="" id="" class="miselect5 miInput">
+            <option value="">País</option>
+            <option value="">méxico</option>
+            <option value="">eu</option>
+          </select>
+          <div class="arrow-select"><img class="img hvr-grow" src="main/assets/images/icono/23.png" /></div>
+
+        </label>
+        <label class="item-input-wrapper margin20Top relative content-select2">
+          <select name="" id="" class="miselect5 miInput">
+            <option value="">Año</option>
+            <option value="">Medico</option>
+            <option value="">enfermera</option>
+          </select>
+          <div class="arrow-select"><img class="img hvr-grow" src="main/assets/images/icono/23.png" /></div>
+        </label>
+
+      </div>
+      <div class=" text-center bt1 pt20" ng-show="!isGroupShown(4)"><img src="main/assets/images/icono/55.png" class="hvr-grow" width="35px" /></div><br>
+      <div class=" text-center bt1 pt20 pb20" ng-show="isGroupShown(4)"><button class="button3 margin10 hvr-float-shadow"><img src="main/assets/images/icono/87.png" width="20px" alt="" class="alignV"></button>
+      </div>
+    </div>
+
+  </div>
+  <div ng-show="tabT" class="padding">
+    <div class="content-dropdown mb20">
+      <div class="row row-center item-stable pt20 pb20" ng-click="toggleGroup(3)" ng-class="{active: isGroupShown(3)}">
+        <div class="col-10">
+          <img src="main/assets/images/icono/263.png" class="derecha hvr-grow" width="20px" alt="">
+        </div>
+        <div class="col-75 padding10Lef">
+          <p class="fontAzul">Afiliación</p>
+        </div>
+        <div class="col-10" align="center">
+          <img src="main/assets/images/icono/{{isGroupShown(3) ? 165 : 23 }}.png" class="derecha arrow hvr-grow" ng-class="{arrowup: isGroupShown(3)}" width="15px" alt="">
+          <!-- <img ng-show="isGroupShown(2)" src="main/assets/images/icono/165.png" class="derecha arrow arrowup" width="15px" alt="">-->
+        </div>
+      </div>
+      <div class="item-accordion" ng-show="isGroupShown(3)">
+        <label class="item-input-wrapper margin20Top relative">
+          <input type="text" placeholder="Asociación" class="miInput" style="margin-left:30px;">
+          <div class="arrow-right"><img class="img hvr-grow" src="main/assets/images/icono/24.png" /></div>
+        </label>
+
+        <label class="item-input-wrapper margin20Top relative content-select1">
+          <select name="" id="" class="miselect5 miInput">
+            <option value="">País</option>
+            <option value="">méxico</option>
+            <option value="">eu</option>
+          </select>
+          <div class="arrow-select"><img class="img hvr-grow" src="main/assets/images/icono/23.png" /></div>
+
+        </label>
+        <label class="item-input-wrapper margin20Top relative content-select2">
+          <select name="" id="" class="miselect5 miInput">
+            <option value="">Año</option>
+            <option value="">Medico</option>
+            <option value="">enfermera</option>
+          </select>
+          <div class="arrow-select"><img class="img hvr-grow" src="main/assets/images/icono/23.png" /></div>
+        </label>
+        <label class="item-input-wrapper relative margin20Top">
+          <input type="text" placeholder="Agregar otros miembros" class="miInput" style="margin-left:30px;">
+          <div class="arrow-right"><img class="img" src="main/assets/images/icono/24.png" /></div>
+        </label>
+
+      </div>
+      <div class=" text-center bt1 pt20"><img src="main/assets/images/icono/55.png" class="hvr-grow" width="35px" /></div>
+<br>
+    </div>
+    <div class="content-dropdown mb20">
+      <div class="row row-center item-stable pt20 pb20" ng-click="toggleGroup(4)" ng-class="{active: isGroupShown(4)}">
+        <div class="col-10">
+          <img src="main/assets/images/icono/264.png" class="derecha hvr-grow" width="20px" alt="">
+        </div>
+        <div class="col-75 padding10Lef">
+          <p class="fontAzul">Socios comerciales</p>
+        </div>
+        <div class="col-10" align="center">
+          <img src="main/assets/images/icono/{{isGroupShown(4) ? 165 : 23 }}.png" class="derecha arrow hvr-grow" ng-class="{arrowup: isGroupShown(4)}" width="15px" alt="">
+          <!-- <img ng-show="isGroupShown(2)" src="main/assets/images/icono/165.png" class="derecha arrow arrowup" width="15px" alt="">-->
+        </div>
+      </div>
+      <div class="item-accordion" ng-show="isGroupShown(4)">
+
+        <label class="item-input-wrapper margin20Top relative">
+          <select name="" id="" class="miselect5 miInput" style="margin-left: 30px;">
+            <option value="">Negocio</option>
+            <option value=""></option>
+            <option value=""></option>
+          </select>
+          <div class="arrow-select"><img class="img hvr-grow" src="main/assets/images/icono/23.png" /></div>
+
+        </label>
+        <label class="item-input-wrapper margin20Top">
+          <input type="text" placeholder="Nombre" class="miInput" style="margin-left:30px;">
+        </label>
+
+      </div>
+      <div class=" text-center bt1 pt20"><img src="main/assets/images/icono/55.png" class="hvr-grow" width="35px" /></div><br>
+    </div>
+    <div class="content-dropdown mb20">
+      <div class="row row-center item-stable pt20 pb20" ng-click="toggleGroup(6)" ng-class="{active: isGroupShown(6)}">
+        <div class="col-10">
+          <img src="main/assets/images/icono/265.png" class="derecha hvr-grow" width="20px" alt="">
+        </div>
+        <div class="col-75 padding10Lef">
+          <p class="fontAzul">Equipo</p>
+        </div>
+        <div class="col-10" align="center">
+          <img src="main/assets/images/icono/{{isGroupShown(6) ? 165 : 23 }}.png" class="derecha arrow hvr-grow" ng-class="{arrowup: isGroupShown(6)}" width="15px" alt="">
+          <!-- <img ng-show="isGroupShown(2)" src="main/assets/images/icono/165.png" class="derecha arrow arrowup" width="15px" alt="">-->
+        </div>
+      </div>
+      <div class="item-accordion" ng-show="isGroupShown(6)">
+        <label class="item-input-wrapper margin20Top">
+          <input type="text" placeholder="Titulo" class="miInput" style="margin-left:30px;">
+        </label>
+        <label class="item-input-wrapper margin20Top">
+          <input type="text" placeholder="Institución" class="miInput" style="margin-left:30px;">
+        </label>
+        <label class="item-input-wrapper margin20Top relative content-select1">
+          <select name="" id="" class="miselect5 miInput">
+            <option value="">País</option>
+            <option value="">méxico</option>
+            <option value="">eu</option>
+          </select>
+          <div class="arrow-select"><img class="img hvr-grow" src="main/assets/images/icono/23.png" /></div>
+
+        </label>
+        <label class="item-input-wrapper margin20Top relative content-select2">
+          <select name="" id="" class="miselect5 miInput">
+            <option value="">Año</option>
+            <option value="">Medico</option>
+            <option value="">enfermera</option>
+          </select>
+          <div class="arrow-select"><img class="img hvr-grow" src="main/assets/images/icono/23.png" /></div>
+        </label>
+
+      </div>
+
+    </div>
+
+
+
+  </div>
+  <div ng-show="tabCu">
+    <div class="backVerde padding10" align="center">
+      <p class="fontBlanco1">Activa acesoria inmediata remota.</p>
+      <p class="fontBlanco1">Da este tipo de acesorias para consultas rápidas</p>
+      <p class="fontBlanco1">y atraer nuevos clientes. Tarifa fija para bitrubio</p>
+      <p class="fontBlanco1">Activa <img style="vertical-align: middle;" src=" main/assets/images/icono/117.png" width="23px" /></p>
+    </div>
+    <div class="pico">
+
+    </div>
+
+    <div class="padding">
+      <div class="content-dropdown mb20 mt20">
+        <div class="row row-center item-stable pt20 pb20" ng-click="toggleGroup(6)" ng-class="{active: isGroupShown(6)}">
+          <div class="col-10">
+            <img src="main/assets/images/icono/62.png" class="derecha hvr-grow" width="20px" alt="">
+          </div>
+          <div class="col-75 padding10Lef">
+            <p class="fontAzul">Precios y servicios</p>
+          </div>
+          <div class="col-10" align="center">
+            <img src="main/assets/images/icono/{{isGroupShown(6) ? 165 : 23 }}.png" class="derecha arrow hvr-grow" ng-class="{arrowup: isGroupShown(6)}" width="15px" alt="">
+            <!-- <img ng-show="isGroupShown(2)" src="main/assets/images/icono/165.png" class="derecha arrow arrowup" width="15px" alt="">-->
+          </div>
+        </div>
+        <div class="item-accordion" ng-show="isGroupShown(6)">
+          <div class="">
+            <div class="content-dropdown mb20 mt20">
+              <div class="row row-center item-stable pt20 pb20" ng-click="toggleGroup2(9)" ng-class="{active: isGroupShown2(9)}">
+                <div class="col-10">
+                  <img src="main/assets/images/icono/32.png" class="derecha hvr-grow" width="20px" alt="">
+                </div>
+                <div class="col-75 padding10Lef">
+                  <p class="fontAzul">videoconsulta</p>
+                </div>
+                <div class="col-10" align="center">
+                  <img src="main/assets/images/icono/{{isGroupShown2(9) ? 165 : 23 }}.png" class="derecha arrow hvr-grow" ng-class="{arrowup: isGroupShown2(9)}" width="15px" alt="">
+                  <!-- <img ng-show="isGroupShown(2)" src="main/assets/images/icono/165.png" class="derecha arrow arrowup" width="15px" alt="">-->
+                </div>
+              </div>
+              <div class="item-accordion" ng-show="isGroupShown2(9)">
+               <div class="content-price padding">
+                 <div class=" fontAzul5">Precio publicado</div>
+                 <div class="col-60 inline-block" style="margin-right: 35px;">Videoconsulta</div>
+                 <div class="col-30 inline-block">$500.00</div>
+                 <span class="btn-share"><img src="main/assets/images/icono/15.png" width="20px" class="hvr-grow"/></span>
+
+               </div>
+               <label class="item-input-wrapper margin20Top col-50 left">
+                <input type="text" placeholder="Nombre" class="miInput" style="margin-left:30px;">
+              </label>
+              <label class="item-input-wrapper margin20Top col-50 left">
+                <input type="text" placeholder="Precio" class="miInput" style="margin-left:30px;">
+              </label>
+              <label class="item-input-wrapper margin20Top">
+                <input type="text" placeholder="Observaciones" class="miInput" style="margin-left:30px;">
+              </label>
+              <label class="relative item-input-wrapper margin20Top">
+                <label for="" class="checkbox checkbox-circle alignV" style="margin-left: 30px !important; margin-bottom: 10px !important;">
+                  <input type="checkbox" class="miCheck checkbox-circle" name="" value="">
+                </label>
+                <span class="fontGris alignV">Publicar precio</span>
+                <span class="btn-share"><img src="main/assets/images/icono/15.png" class="hvr-grow" width="20px" /></span>
+              </label>
+
+            </div>
+            <div class=" text-center bt1 pt20" ng-show="!isGroupShown2(4)"><img src="main/assets/images/icono/55.png" width="35px" class="hvr-grow" /></div>
+<br>
+          </div>
+        </div>
+        <div class="b10-ddd">
+          <div class="content-dropdown mb20 mt20">
+            <div class="row row-center item-stable pt20 pb20" ng-click="toggleGroup2(10)" ng-class="{active: isGroupShown2(10)}">
+              <div class="col-10">
+                <img src="main/assets/images/icono/46.png" class="derecha hvr-grow" width="20px" alt="">
+              </div>
+              <div class="col-75 padding10Lef">
+                <p class="fontAzul">Consulta presencial</p>
+              </div>
+              <div class="col-10" align="center">
+                <img src="main/assets/images/icono/{{isGroupShown2(10) ? 165 : 23 }}.png" class="derecha arrow hvr-grow" ng-class="{arrowup: isGroupShown2(10)}" width="15px" alt="">
+                <!-- <img ng-show="isGroupShown(2)" src="main/assets/images/icono/165.png" class="derecha arrow arrowup" width="15px" alt="">-->
+              </div>
+            </div>
+            <div class="item-accordion" ng-show="isGroupShown2(10)">
+             <div class="content-price padding">
+               <div class="fontAzul5">Precio publicado</div>
+               <div class="col-60 inline-block" style="margin-right: 35px;">Consulta presencial</div>
+               <div class="col-30 inline-block">$500.00</div>
+               <span class="btn-share"><img src="main/assets/images/icono/15.png" class="hvr-grow" width="20px" /></span>
+
+             </div>
+             <label class="item-input-wrapper margin20Top col-50 left">
+              <input type="text" placeholder="Nombre" class="miInput" style="margin-left:30px;">
+            </label>
+            <label class="item-input-wrapper margin20Top col-50 left">
+              <input type="text" placeholder="Precio" class="miInput" style="margin-left:30px;">
+            </label>
+            <label class="item-input-wrapper margin20Top">
+              <input type="text" placeholder="Observaciones" class="miInput" style="margin-left:30px;">
+            </label>
+            <label class="relative item-input-wrapper margin20Top">
+              <label for="" class="checkbox checkbox-circle alignV" style="margin-left: 30px !important; margin-bottom: 10px !important;">
+                <input type="checkbox" class="miCheck checkbox-circle" name="" value="">
+              </label>
+              <span class="fontGris alignV">Publicar precio</span>
+              <span class="btn-share"><img src="main/assets/images/icono/15.png" class="hvr-grow" width="20px" /></span>
+            </label>
+
+          </div>
+          <div class=" text-center bt1 pt20" ng-show="!isGroupShown2(4)"><img src="main/assets/images/icono/55.png" width="35px" class="hvr-grow" /></div><br>
+
+        </div>
+      </div>
+      <div class="b10-ddd">
+        <div class="content-dropdown mb20 mt20">
+          <div class="row row-center item-stable pt20 pb20" ng-click="toggleGroup2(11)" ng-class="{active: isGroupShown2(11)}">
+            <div class="col-10">
+              <img src="main/assets/images/icono/203.png" class="derecha hvr-grow" width="20px" alt="">
+            </div>
+            <div class="col-75 padding10Lef">
+              <p class="fontAzul">Otros servicios</p>
+            </div>
+            <div class="col-10" align="center">
+              <img src="main/assets/images/icono/{{isGroupShown2(11) ? 165 : 23 }}.png" class="derecha arrow hvr-grow" ng-class="{arrowup: isGroupShown2(11)}" width="15px" alt="">
+              <!-- <img ng-show="isGroupShown(2)" src="main/assets/images/icono/165.png" class="derecha arrow arrowup" width="15px" alt="">-->
+            </div>
+          </div>
+          <div class="item-accordion" ng-show="isGroupShown2(11)">
+
+            <label class="item-input-wrapper margin20Top">
+              <input type="text" placeholder="Agregar Servicio" class="miInput" style="margin-left:30px;">
+            </label>
+
+          </div>
+          <div class=" text-center bt1 pt20" ng-show="!isGroupShown2(11)"><img src="main/assets/images/icono/55.png" class="hvr-grow" width="35px" /></div><br>
+
+        </div>
+      </div>
+    </div>
+    <div class=" text-center bt1 pt20" ng-show="!isGroupShown(4)"><img src="main/assets/images/icono/55.png" class="hvr-grow" width="35px" /></div><br>
+
+  </div>
+  <div class="content-dropdown mb20">
+    <div class="row row-center item-stable pt20 pb20" ng-click="toggleGroup(6)" ng-class="{active: isGroupShown(6)}">
+      <div class="col-10">
+        <img src="main/assets/images/icono/281.png" class="derecha hvr-grow" width="20px" alt="">
+      </div>
+      <div class="col-75 padding10Lef">
+        <p class="fontAzul">Promociones</p>
+      </div>
+      <div class="col-10" align="center">
+        <img src="main/assets/images/icono/{{isGroupShown(6) ? 165 : 23 }}.png" class="derecha arrow hvr-grow" ng-class="{arrowup: isGroupShown(6)}" width="15px" alt="">
+        <!-- <img ng-show="isGroupShown(2)" src="main/assets/images/icono/165.png" class="derecha arrow arrowup" width="15px" alt="">-->
+      </div>
+    </div>
+    <div class="item-accordion" ng-show="isGroupShown(6)">
+      <label class="item-input-wrapper margin20Top col-50 left">
+        <input type="text" placeholder="Nombre" class="miInput" style="margin-left:30px;">
+      </label>
+      <label class="item-input-wrapper margin20Top col-50 left">
+        <input type="text" placeholder="Precio" class="miInput" style="margin-left:30px;">
+      </label>
+      <label class="item-input-wrapper margin20Top col-50 left">
+        <input type="text" placeholder="Vigencia desde" class="miInput" style="margin-left:30px;">
+      </label>
+      <label class="item-input-wrapper margin20Top col-50 left">
+        <input type="text" placeholder="Vigencia hasta" class="miInput" style="margin-left:30px;">
+      </label>
+      <label class="item-input-wrapper margin20Top">
+        <input type="text" placeholder="Observaciones" class="miInput" style="margin-left:30px;">
+      </label>
+      <div align="center" class="content-info" >
+        <span class="fontAzul5">Esta Promoción sustituye temporalmente el precio publicado para pacientes</span>
+      </div>
+    </div>
+    <div class=" text-center bt1 pt20" ng-show="!isGroupShown(4)"><img src="main/assets/images/icono/55.png" class="hvr-grow" width="35px" /></div> <br>
+
+  </div>
+  <div class="content-dropdown mb20">
+    <div class="row row-center item-stable pt20 pb20" ng-click="toggleGroup(6)" ng-class="{active: isGroupShown(6)}">
+      <div class="col-10">
+        <img src="main/assets/images/icono/280.png" class="derecha hvr-grow" width="20px" alt="">
+      </div>
+      <div class="col-75 padding10Lef">
+        <p class="fontAzul">Mi cuenta de deposito</p>
+      </div>
+      <div class="col-10" align="center">
+        <img src="main/assets/images/icono/{{isGroupShown(6) ? 165 : 23 }}.png" class="derecha arrow hvr-grow" ng-class="{arrowup: isGroupShown(6)}" width="15px" alt="">
+        <!-- <img ng-show="isGroupShown(2)" src="main/assets/images/icono/165.png" class="derecha arrow arrowup" width="15px" alt="">-->
+      </div>
+    </div>
+    <div class="item-accordion" ng-show="isGroupShown(6)">
+      <label class="item-input-wrapper margin20Top">
+        <input type="text" placeholder="Agregar cuenta" class="miInput" style="margin-left:30px;">
+      </label>
+
+    </div>
+    <div class=" text-center bt1 pt20" ng-show="isGroupShown(6)"><img src="main/assets/images/icono/55.png" class="hvr-grow" width="35px" /></div>
+<br>
+
+  </div>
+  <div class="content-dropdown mb20">
+    <div class="row row-center item-stable pt20 pb20" ng-click="toggleGroup(7)" ng-class="{active: isGroupShown(7)}">
+      <div class="col-10">
+        <img src="main/assets/images/icono/32.png" class="derecha hvr-grow" width="20px" alt="">
+      </div>
+      <div class="col-75 padding10Lef">
+        <p class="fontAzul">Mi informacion fiscal</p>
+      </div>
+      <div class="col-10" align="center">
+        <img src="main/assets/images/icono/{{isGroupShown(7) ? 165 : 23 }}.png" class="derecha arrow hvr-grow" ng-class="{arrowup: isGroupShown(7)}" width="15px" alt="">
+        <!-- <img ng-show="isGroupShown(2)" src="main/assets/images/icono/165.png" class="derecha arrow arrowup" width="15px" alt="">-->
+      </div>
+    </div>
+    <div class="item-accordion" ng-show="isGroupShown(7)">
+      <label class="item-input-wrapper margin20Top">
+        <input type="text" placeholder="Email" class="miInput" style="margin-left:30px;">
+      </label>
+      <label class="item-input-wrapper margin20Top">
+        <input type="text" placeholder="RFC" class="miInput" style="margin-left:30px;">
+      </label>
+
+    </div>
+    <div class=" text-center bt1 pt20" ng-show="!isGroupShown(4)"><img src="main/assets/images/icono/55.png" width="35px" class="hvr-grow" /></div><br>
+  </div>
+  </div>
+  </div>
+  <!-- content goes here -->
+  </ion-content>
+</ion-view>

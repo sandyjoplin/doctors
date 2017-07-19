@@ -1,0 +1,63 @@
+<ion-view view-title="main module">
+    <ion-nav-buttons side="right">
+        <div class="btn-videollamada">
+            <img class="block" src="main/assets/images/icono/117_1.png" width="20px" alt="">
+        </div>
+        <div>
+        <span class="fontBlanco relative">
+            <span class="count">1</span>
+            <img src="main/assets/images/icono/102.png" style="width:30px;margin:0 0 0px 0" alt="">
+        </span> 
+        </div>
+        <img src="main/assets/images/bit2.png" style="height:20px;margin:0px 5px 6px 5px" alt="">
+    </ion-nav-buttons>
+  <!-- do you want padding? -->
+  <ion-header-bar class="bar bar-subheader">
+      <ul class="row miTab1 menu-perfil" align="center">
+        <li class="col25" ng-click="tabUnofn()"><a href=""><img src="main/assets/images/icono/230_1.png" width="20px" /></a> </li>
+        <li class="col25" ng-click="tabDosfn()"><a href=""><img src="main/assets/images/icono/132.png" width="20px" /></a> </li>
+        <li class="col25 active" ng-click="tabTresfn()"><a href=""><img src="main/assets/images/icono/historico-recetas-azul.png" width="20px" /></a> </li>
+        <li class="col25" ng-click="tabCuatrofn()"><a href=""><img src="main/assets/images/icono/pregunta-colega-az.png" width="20px" /></a> </li>
+      </ul>
+    </ion-header-bar>
+  <ion-content class="">
+  <div ng-show="tabU">
+  <div class="backVerde padding10" align="center">
+            <span class="fontBlanco1">Notas privadas<br /> Estas notas sólo tú las podrás visulizar</span>
+        </div>
+        <div class="pico"></div>
+       
+    <div class="row">
+      <div class="padding10">
+        <br>
+        <label class="item-input-wrapper">
+          <textarea rows="10" cols="50" name="" id="" placeholder="Comienza a escribir" class="" style="width:100%"></textarea>
+        </label>
+      </div>
+    </div>
+    <ion-footer-bar keyboard-attach>
+      <div class="row row-center">
+        <div class="col-75">
+          <div class="row" align="center">
+            <div class="col-20"> <img src="main/assets/images/icono/121.png" class="alignV" width="20px" alt=""> </div>
+            <div class="col-20"> <img src="main/assets/images/icono/120.png" class="alignV" width="20px" alt=""> </div>
+            <div class="col-20"> <img src="main/assets/images/icono/117.png" class="alignV" width="20px" alt=""> </div>
+            <div class="col-20"> <img src="main/assets/images/icono/174.png" class="alignV" width="20px" alt=""> </div>
+          </div>
+        </div>
+        <div class="col-25">
+          <p class="fontAzul">Resguardar</p>
+        </div>
+      </div>
+    </ion-footer-bar>
+  </div>
+  <div ng-show="tabD">
+  </div>
+  <div ng-show="tabT">
+  </div>
+  <div ng-show="tabC">
+  </div>
+  <!-- content goes here -->
+
+</ion-content>
+</ion-view>

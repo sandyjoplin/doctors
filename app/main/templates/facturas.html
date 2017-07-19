@@ -1,0 +1,272 @@
+<ion-view view-title="Facturas">
+    <ion-nav-buttons side="right">
+        <div class="btn-videollamada">
+            <img class="block" src="main/assets/images/icono/117_1.png" width="20px" alt="">
+        </div>
+        <div>
+        <span class="fontBlanco relative">
+            <span class="count">1</span>
+            <img src="main/assets/images/icono/102.png" style="width:30px;margin:0 0 0px 0" alt="">
+        </span> 
+        </div>
+        <img src="main/assets/images/bit2.png" style="height:20px;margin:0px 5px 6px 5px" alt="">
+    </ion-nav-buttons>
+    <ion-content class="">
+        <ul class="row miTab" align="center">
+            <li class="col33" ng-click="tabUnofn()"><a>Sin facturar</a></li>
+            <li class="col33" ng-click="tabDosfn()"><a>Facturadas</a></li>
+            <li class="col33" ng-click="tabTresfn()"><a>Mis datos</a></li>
+        </ul>
+        <div ng-show="tabU" class="backCrema">
+            <div align="center" class="backBlanco margin10Top">
+                <div class="padding10">
+                    <div class="row row-center">
+                        <div class="col-25">
+                            <p class="fontNegro3">000000</p>
+                        </div>
+                        <div class="col-50"> <img src="main/assets/images/perfil1.jpg" class="img9" alt=""> </div>
+                        <div class="col-25">
+                            <label for="" class="checkbox checkbox-circle alignV">
+                                <input type="checkbox" class="miCheck checkbox-circle" name="" value=""> </label>
+                        </div>
+                    </div>
+                    <div class="" align="center">
+                        <p class="fontNegro3">Eduin Hernandez</p>
+                        <p class="fontGris7">Médico familiar</p>
+                    </div>
+                </div>
+                <div class="row backVerde">
+                    <div class="col-33 padding5Top"> <img src="main/assets/images/icono/89.png" width="20px" alt="">
+                        <p class="fontBlanco7">Fecha</p>
+                    </div>
+                    <div class="col-33 bordeCol padding5Top"> <img src="main/assets/images/icono/70.png" width="20px" alt="">
+                        <p class="fontBlanco7">Tarjeta</p>
+                    </div>
+                    <div class="col-33 padding5Top"> <img src="main/assets/images/icono/88.png" width="20px" alt="">
+                        <p class="fontBlanco7">Costo</p>
+                    </div>
+                </div>
+                <div class="padding10Top">
+                    <div class="row row-center">
+                        <div class="col-33">
+                            <p class="fontGris7">10/sep/2016</p>
+                        </div>
+                        <div class="col-33">
+                            <p class="fontAzul8">**** 8456</p>
+                        </div>
+                        <div class="col-33">
+                            <p class="fontGris7">$500.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="padding10Top">
+                    <div class="row">
+                        <div class="col-33 col-offset-66">
+                            <p class="fontAzul5">Ver consulta<span><img src="main/assets/images/icono/24.png" class="alignV" width="10px;" alt=""></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div align="center" class="backBlanco margin10Top">
+                <div class="padding10">
+                    <div class="row row-center">
+                        <div class="col-25">
+                            <p class="fontNegro3">000000</p>
+                        </div>
+                        <div class="col-50"> <img src="main/assets/images/perfil1.jpg" class="img9" alt=""> </div>
+                        <div class="col-25">
+                            <label for="" class="checkbox checkbox-circle alignV">
+                                <input type="checkbox" class="miCheck checkbox-circle" name="" value=""> </label>
+                        </div>
+                    </div>
+                    <div class="" align="center">
+                        <p class="fontNegro3">Eduin Hernandez</p>
+                        <p class="fontGris7">Médico familiar</p>
+                    </div>
+                </div>
+                <div class="row backVerde">
+                    <div class="col-33 padding5Top"> <img src="main/assets/images/icono/89.png" width="20px" alt="">
+                        <p class="fontBlanco7">Fecha</p>
+                    </div>
+                    <div class="col-33 bordeCol padding5Top"> <img src="main/assets/images/icono/70.png" width="20px" alt="">
+                        <p class="fontBlanco7">Tarjeta</p>
+                    </div>
+                    <div class="col-33 padding5Top"> <img src="main/assets/images/icono/88.png" width="20px" alt="">
+                        <p class="fontBlanco7">Costo</p>
+                    </div>
+                </div>
+                <div class="padding10Top">
+                    <div class="row row-center">
+                        <div class="col-33">
+                            <p class="fontGris7">10/sep/2016</p>
+                        </div>
+                        <div class="col-33">
+                            <p class="fontAzul8">**** 8456</p>
+                        </div>
+                        <div class="col-33">
+                            <p class="fontGris7">$500.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="padding10Top">
+                    <div class="row">
+                        <div class="col-33 col-offset-66">
+                            <p class="fontAzul5">Ver consulta<span><img src="main/assets/images/icono/24.png" class="alignV" width="10px;" alt=""></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div align="center" class="margin10Top">
+                <div class="backBlanco padding10"> 
+                   <div class="hvr-grow">
+                      <img src="main/assets/images/icono/33.png" width="35px;">
+                    <p class="fontAzul8">Facturar</p> 
+                   </div>
+                </div>
+            </div>
+        </div>
+        <div ng-show="tabD" class="backCrema">
+            <div align="center" class="backBlanco margin10Top">
+                <div class="padding10">
+                    <div class="row row-center">
+                        <div class="col-25">
+                            <p class="fontNegro3">000000</p>
+                        </div>
+                        <div class="col-50"> <img src="main/assets/images/perfil1.jpg" class="img9" alt=""> </div>
+                        <div class="col-25">
+                            <label for="" class="checkbox checkbox-circle alignV">
+                                <input type="checkbox" class="miCheck checkbox-circle" name="" value=""> </label>
+                        </div>
+                    </div>
+                    <div class="" align="center">
+                        <p class="fontNegro3">Eduin Hernandez</p>
+                        <p class="fontGris7">Médico familiar</p>
+                    </div>
+                </div>
+                <div class="row backVerde">
+                    <div class="col-33 padding5Top"> <img src="main/assets/images/icono/89.png" width="20px" alt="">
+                        <p class="fontBlanco7">Fecha</p>
+                    </div>
+                    <div class="col-33 bordeCol padding5Top"> <img src="main/assets/images/icono/70.png" width="20px" alt="">
+                        <p class="fontBlanco7">Tarjeta</p>
+                    </div>
+                    <div class="col-33 padding5Top"> <img src="main/assets/images/icono/88.png" width="20px" alt="">
+                        <p class="fontBlanco7">Costo</p>
+                    </div>
+                </div>
+                <div class="padding10Top">
+                    <div class="row row-center">
+                        <div class="col-33">
+                            <p class="fontGris7">10/sep/2016</p>
+                        </div>
+                        <div class="col-33">
+                            <p class="fontAzul8">**** 8456</p>
+                        </div>
+                        <div class="col-33">
+                            <p class="fontGris7">$500.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="padding10Top">
+                    <div class="row">
+                        <div class="col-33 col-offset-66">
+                            <p class="fontAzul5">Ver más <span><img src="main/assets/images/icono/23.png" class="alignV" width="10px;" alt=""></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div align="center" class="backBlanco margin10Top">
+                <div class="padding10">
+                    <div class="row row-center">
+                        <div class="col-25">
+                            <p class="fontNegro3">000000</p>
+                        </div>
+                        <div class="col-50"> <img src="main/assets/images/perfil1.jpg" class="img9" alt=""> </div>
+                        <div class="col-25">
+                            <label for="" class="checkbox checkbox-circle alignV">
+                                <input type="checkbox" class="miCheck checkbox-circle" name="" value=""> </label>
+                        </div>
+                    </div>
+                    <div class="" align="center">
+                        <p class="fontNegro3">Eduin Hernandez</p>
+                        <p class="fontGris7">Médico familiar</p>
+                    </div>
+                </div>
+                <div class="row backVerde">
+                    <div class="col-33 padding5Top"> <img src="main/assets/images/icono/89.png" width="20px" alt="">
+                        <p class="fontBlanco7">Fecha</p>
+                    </div>
+                    <div class="col-33 bordeCol padding5Top"> <img src="main/assets/images/icono/70.png" width="20px" alt="">
+                        <p class="fontBlanco7">Tarjeta</p>
+                    </div>
+                    <div class="col-33 padding5Top"> <img src="main/assets/images/icono/88.png" width="20px" alt="">
+                        <p class="fontBlanco7">Costo</p>
+                    </div>
+                </div>
+                <div class="padding10Top">
+                    <div class="row row-center">
+                        <div class="col-33">
+                            <p class="fontGris7">10/sep/2016</p>
+                        </div>
+                        <div class="col-33">
+                            <p class="fontAzul8">**** 8456</p>
+                        </div>
+                        <div class="col-33">
+                            <p class="fontGris7">$500.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="padding10Top">
+                    <div class="row">
+                        <div class="col-33 col-offset-66">
+                            <p class="fontAzul5">Ver más <span><img src="main/assets/images/icono/23.png" class="alignV" width="10px;" alt=""></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div align="center" class="margin10Top">
+                <div class="backBlanco padding10">
+                   <div class="hvr-grow">
+                       <img src="main/assets/images/icono/54.png" width="35px;" alt="">
+                    <p class="fontAzul8">Reenviar factura
+                        <br> a email</p>
+                   </div> 
+                </div>
+            </div>
+        </div>
+        <div ng-show="tabT" class="backCrema">
+            <div class="backBlanco padding10 margin10Top">
+                <div class="row margin10Top">
+                    <div class="col-80"> <img src="main/assets/images/icono/6.png" width="20px" class="alignV hvr-grow" alt=""> <span class="fontNegro alignV">Email registrado</span> </div>
+                    <div class="col-20"> </div>
+                </div>
+                <div class="divider3"></div>
+                <div class="row row-center padding10Top">
+                    <div class="col-80">
+                        <p class="fontNegro6 padding30Lef">sandra@bitrubio.com</p>
+                    </div>
+                    <div class="col-20"> <img src="main/assets/images/icono/49.png" width="20px" class="derecha hvr-grow" alt=""> </div>
+                </div>
+            </div>
+            <div class="backBlanco padding20 margin10Top">
+                <div class="row margin10Top">
+                    <div class="col-80"> <img src="main/assets/images/icono/32.png" height="20px" class="alignV hvr-grow"> <span class="fontNegro alignV">RFC registrado</span> </div>
+                    <div class="col-20" ui-sref="main.agregarRfc"> <img src="main/assets/images/icono/55.png" height="20px" class="alignV derecha hvr-grow" alt=""> </div>
+                </div>
+                <div class="divider3"></div>
+                <div class="row row-center padding10Top">
+                    <div class="col-80">
+                        <p class="fontNegro6 padding30Lef">JULOSA6162522</p>
+                    </div>
+                    <div class="col-20" ui-sref="main.agregarRfc"> <img src="main/assets/images/icono/49.png" width="20px" class="derecha hvr-grow" alt=""> </div>
+                </div>
+                <div class="row row-center padding10Top">
+                    <div class="col-80">
+                        <p class="fontNegro6 padding30Lef">JULOSA6162522</p>
+                    </div>
+                    <div class="col-20" ui-sref="main.agregarRfc"> <img src="main/assets/images/icono/49.png" width="20px" class="derecha hvr-grow" alt=""> </div>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

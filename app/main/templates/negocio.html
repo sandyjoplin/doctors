@@ -1,0 +1,533 @@
+<ion-view view-title="Negocio">
+    <ion-nav-buttons side="right">
+        <div class="btn-videollamada">
+            <img class="block" src="main/assets/images/icono/117_1.png" width="20px" alt="">
+        </div>
+        <div>
+            <span class="fontBlanco relative">
+            <span class="count">1</span>
+            <img src="main/assets/images/icono/102.png" style="width:30px;margin:0 0 0px 0" alt="">
+            </span>
+        </div>
+        <img src="main/assets/images/bit2.png" style="height:20px;margin:0px 5px 6px 5px" alt="">
+    </ion-nav-buttons>
+    <!-- do you want padding? -->
+    <ion-content class="mb90">
+        <ul class="row miTab1" align="center">
+            <li class="col20" ng-click="tabUnofn()">
+                <div><img src="main/assets/images/icono/195.png" width="20px;" class="hvr-grow"></div>
+                <a href="">Pacientes</a>
+            </li>
+            <li class="col20" ng-click="tabDosfn()">
+                <div><img src="main/assets/images/icono/36.png" width="20px;" class="hvr-grow"></div>
+                <a href="">Servicio</a>
+            </li>
+            <li class="col20 active" ng-click="tabTresfn()">
+                <div><img src="main/assets/images/icono/231.png" width="20px;" class="hvr-grow"></div>
+                <a href="">Ganancia</a>
+            </li>
+            <li class="col20" ng-click="tabCuatrofn()">
+                <div><img src="main/assets/images/icono/132.png" width="20px;" class="hvr-grow"></div>
+                <a href="">Consulta</a>
+            </li>
+            <li class="col20" ng-click="tabCincofn()">
+                <div><img src="main/assets/images/icono/62.png" width="20px;" class="hvr-grow"></div>
+                <a href="">Precio</a>
+            </li>
+        </ul>
+        <div ng-show="tabU">
+            <div class="relative w-100 bg-7ab mt30">
+                <div class="figura padding10" align="center">
+                    <p class="fontBlanco1 fs12 p0">Promedio de nuevos pacientes promedio</p>
+                    <p class="fontBlanco1 fs12 p0">de tu especialidad al mes</p>
+                    <p class="fontBlanco1 fwb">13 </p>
+                </div>
+                <div class="picotop left7"> </div>
+            </div>
+            <div class="w80p mt10 mlrauto">
+                <div ui-sref="main.tusNuevos" class="b1-ddd row">
+                    <div class="p10 w100 text-center">
+                        <div class="col66 inline-block line relative">
+                            <div><span class="vmiddle inline-block">
+                                <img class="block hvr-grow" src="main/assets/images/icono/247.png" width="20px;"></span> <span class="vmiddle content-text">Tus nuevos</span> </div>
+                        </div>
+                        <div class="col33 inline-block">
+                            <div class="fwb"> 3 </div>
+                        </div>
+                    </div>
+                </div>
+                <div ui-sref="main.pacientesAbandonados" class="b1-ddd row mt10">
+                    <div class="p10 w100 text-center">
+                        <div class="col66 inline-block line relative">
+                            <div> <span class="inline-block vmiddle"><img class="block hvr-grow" src="main/assets/images/icono/248.png" width="20px;"></span><span class="vmiddle content-text"> Tus abandonos</span> </div>
+                        </div>
+                        <div class="col33 inline-block">
+                            <div class="fwb"> 5 </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="b1-7ab row mt30">
+                    <div class=" w100 text-center">
+                        <div class="bg-7ab fontBlanco1">
+                            <div class="vmiddle"> <img class="vmiddle" src="main/assets/images/icono/249.png" width="20px;"> <span class="alignV">Tus pacientes al dia de hoy</span> </div>
+                        </div>
+                        <div class="w100 inline-block">
+                            <div class="fwb fs14 p10"> 350 </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="meses">
+                <li class="item-meses item-active radiusleft"><span class="">Ene</span></li>
+                <!--
+            --> 
+                <li class="item-meses item-active"><span class="">Feb</span></li>
+                <!--
+            -->
+                <li class="item-meses item-active radiusright"><span class="">Mar</span></li>
+                <!--
+            -->
+                <li class="item-meses"><span class="">Abr</span></li>
+                <!--
+            -->
+                <li class="item-meses"><span class="">May</span></li>
+                <!--
+            -->
+                <li class="item-meses"><span class="">Jun</span></li>
+                <!--
+            -->
+                <li class="item-meses"><span class="">Jul</span></li>
+                <!--
+            -->
+                <li class="item-meses"><span class="">Ago</span></li>
+                <!--
+            -->
+                <li class="item-meses"><span class="">Sep</span></li>
+                <!--
+            -->
+                <li class="item-meses"><span class="">Oct</span></li>
+                <!--
+            -->
+                <li class="item-meses"><span class="">Nov</span></li>
+                <!--
+            -->
+                <li class="item-meses"><span class="">Dic</span></li>
+            </ul>
+            <p class="fontAzul underline text-right padding block w80p mlrauto">Enviar reporte por Email</p>
+        </div>
+        <div ng-show="tabD">
+            <div class="relative w-100 bg-7ab mt30">
+                <div class="figura padding10" align="center">
+                    <p class="fontBlanco1 fs12 p0">Calificación promedio de tu especialidad al mes</p>
+                    <p class="fontBlanco1 fwb">4.5 </p>
+                </div>
+                <div class="picotop left27"> </div>
+            </div>
+            <div class="mlrauto text-center bb10-ccc pt20 pb20">
+                <div class="relative inline-block main-star"><img src="main/assets/images/icono/112.png" width="60px" /><span class="absolute height20">4.5</span></div>
+                <div class="inline-block relative top-10">25 personas</div>
+            </div>
+            <div class="mt10 mlrauto backCrema">
+                <div class="backBlanco margin10Top">
+                    <div class="row row-center padding10" ui-sref="main.amigo">
+                        <div class="col-33">
+                            <p class="fontNegro14">Eduin Garnica </p>
+                        </div>
+                        <div class="col-33 backImg1" align="center">
+                            <img src="main/assets/images/perfil1.jpg" class="img9 hvr-grow" alt="">
+                        </div>
+                        <div class="col-33 text-center" align="center">
+                            <span class="mr10 vmiddle inline-block">Calificó</span>
+                            <div class="relative inline-block main-star vmiddle hvr-grow"><img src="main/assets/images/icono/112.png" width="30px" />
+                                <span class="absolute height20">3</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div align="center" style="padding-bottom:10px;">
+                        <p class="fontNegro3">¡Vacaciones!</p>
+                    </div>
+                    <div style="margin: 0 10px;">
+                        <img src="main/assets/images/line.png" width="100%;" alt="">
+                    </div>
+                    <div class="row padding10">
+                        <div class="w100 center" align="center">
+                            <img src="main/assets/images/icono/19.png" id="btnBeats" class="img7 hvr-grow" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="backBlanco margin10Top">
+                    <div class="row row-center padding10" ui-sref="main.amigo">
+                        <div class="col-33">
+                            <p class="fontNegro14">Eduin Garnica </p>
+                        </div>
+                        <div class="col-33 backImg1" align="center">
+                            <img src="main/assets/images/perfil1.jpg" class="img9 hvr-grow" alt="">
+                        </div>
+                        <div class="col-33 text-center" align="center">
+                            <span class="mr10 vmiddle inline-block">Calificó</span>
+                            <div class="relative inline-block main-star vmiddle hvr-grow"><img src="main/assets/images/icono/112.png" width="30px" />
+                                <span class="absolute height20">3</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div align="center" style="padding-bottom:10px;">
+                        <p class="fontNegro3">¡Vacaciones!</p>
+                    </div>
+                    <div style="margin: 0 10px;">
+                        <img src="main/assets/images/line.png" width="100%;" alt="">
+                    </div>
+                    <div class="row padding10">
+                        <div class="w100 center" align="center">
+                            <img src="main/assets/images/icono/19.png" id="btnBeats" class="img7 hvr-grow" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div ng-show="tabT">
+            <div class="relative w-100 bg-7ab mt30">
+                <div class="figura padding10" align="center">
+                    <p class="fontBlanco1 fs12 p0">Promedio de tu especialidad al mes</p>
+                    <p class="fontBlanco1 fwb">$100 </p>
+                </div>
+                <div class="picotop"> </div>
+            </div>
+            <div class="w80p mt10 mlrauto">
+                <div ui-sref="main.ingresos" class="b1-ddd row">
+                    <div class="p10 w100 text-center">
+                        <div class="col66 inline-block line relative">
+                            <div> <span class="vmiddle inline-block"><img class="block hvr-grow" src="main/assets/images/icono/231.png" width="20px;"></span><span class="vmiddle content-text"> Tus ingresos</span> </div>
+                        </div>
+                        <div class="col33 inline-block">
+                            <div class="fwb"> $100 </div>
+                        </div>
+                    </div>
+                </div>
+                <div ui-sref="main.egresos" class="b1-ddd row mt10">
+                    <div class="p10 w100 text-center">
+                        <div class="col66 inline-block line relative">
+                            <div><span class="vmiddle inline-block"> <img class="block hvr-grow" src="main/assets/images/icono/62.png" width="20px;"></span><span class="vmiddle content-text"> Tus egresos</span></div>
+                        </div>
+                        <div class="col33 inline-block">
+                            <div class="fwb"> $100 </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="b1-7ab row mt30">
+                    <div class=" w100 text-center">
+                        <div class="bg-7ab fontBlanco1">
+                            <div class="vmiddle "> <img class="vmiddle hvr-grow" src="main/assets/images/icono/246.png" width="20px;"> <span class="alignV">Tus ganancias al dia de hoy</span> </div>
+                        </div>
+                        <div class="w100 inline-block">
+                            <div class="fwb fs14 p10"> $100 </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="c-green fs18 text-right w100 block">con 5 consultas</span>
+                <div class="b1-7ab row mt30">
+                    <div class=" w100 text-center">
+                        <div class="bg-7ab fontBlanco1">
+                            <div class="vmiddle"> <img class="vmiddle hvr-grow" src="main/assets/images/icono/245.png" width="20px;"> <span class="alignV">Proyección al cierre del mes</span> </div>
+                        </div>
+                        <div class="w100 inline-block">
+                            <div class="fwb fs14 p10"> $100 </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="c-green fs18 text-right w100 block">con 5 consultas</span>
+
+            </div>
+            <ul class="meses">
+                <li class="item-meses item-active radiusleft"><span class="">Ene</span></li>
+                <!--
+            -->
+                <li class="item-meses item-active"><span class="">Feb</span></li>
+                <!--
+            -->
+                <li class="item-meses item-active radiusright"><span class="">Mar</span></li>
+                <!--
+            -->
+                <li class="item-meses"><span class="">Abr</span></li>
+                <!--
+            -->
+                <li class="item-meses"><span class="">May</span></li>
+                <!--
+            -->
+                <li class="item-meses"><span class="">Jun</span></li>
+                <!--
+            -->
+                <li class="item-meses"><span class="">Jul</span></li>
+                <!--
+            -->
+                <li class="item-meses"><span class="">Ago</span></li>
+                <!--
+            -->
+                <li class="item-meses"><span class="">Sep</span></li>
+                <!--
+            -->
+                <li class="item-meses"><span class="">Oct</span></li>
+                <!--
+            -->
+                <li class="item-meses"><span class="">Nov</span></li>
+                <!--
+            -->
+                <li class="item-meses"><span class="">Dic</span></li>
+            </ul>
+            <p class="fontAzul underline text-right padding block w80p mlrauto">Enviar reporte por Email</p>
+
+
+        </div>
+        <div ng-show="tabCu">
+            <div class="relative w-100 bg-7ab mt30">
+                <div class="figura padding10" align="center">
+                    <p class="fontBlanco1 fs12 p0">Consultas promedio de consultas remotas</p>
+                    <p class="fontBlanco1 fs12 p0">de tu especialidad al mes</p>
+                    <p class="fontBlanco1 fwb">100 </p>
+                </div>
+                <div class="picotop left68"> </div>
+            </div>
+            <div class="w80p mt10 mlrauto">
+                <div class="b1-ddd row" ui-sref="main.totalPacientes">
+                    <div class="p10 w100 text-center">
+                        <div class="col66 inline-block line relative">
+                            <div> <span class="vmiddle inline-block"><img class="block hvr-grow" src="main/assets/images/icono/242.png" width="20px;"></span><span class="vmiddle content-text"> Tus remotas</span></div>
+                        </div>
+                        <div class="col33 inline-block">
+                            <div class="fwb"> $100 </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="b1-ddd row mt10" ui-sref="main.totalPacientes">
+                    <div class="p10 w100 text-center">
+                        <div class="col66 inline-block line relative">
+                            <div><span class="inline-block vmiddle"><img class="block hvr-grow" src="main/assets/images/icono/243.png" width="20px;"></span><span class="vmiddle content-text">Tus presenciales</span> </div>
+                        </div>
+                        <div class="col33 inline-block">
+                            <div class="fwb"> $100 </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="b1-7ab row mt30">
+                    <div class=" w100 text-center">
+                        <div class="bg-7ab fontBlanco1">
+                            <div class="vmiddle"> <img class="vmiddle hvr-grow" src="main/assets/images/icono/244.png" width="20px;"> <span class="alignV">Tus consultas totales</span> </div>
+                        </div>
+                        <div class="w100 inline-block">
+                            <div class="fwb fs14 p10"> $100 </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="b1-7ab row mt30">
+                    <div class=" w100 text-center">
+                        <div class="bg-7ab fontBlanco1">
+                            <div class="vmiddle">
+                                <img class="vmiddle hvr-grow" src="main/assets/images/icono/245.png" width="20px;"> <span class="alignV">Proyectadas al cierre del mes</span>
+                            </div>
+                        </div>
+                        <div class="w100 inline-block">
+                            <div class="fwb fs14 p10"> $100 </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="meses">
+                <li class="item-meses item-active radiusleft"><span class="">Ene</span></li>
+                <!--
+            -->
+                <li class="item-meses item-active"><span class="">Feb</span></li>
+                <!--
+            -->
+                <li class="item-meses item-active radiusright"><span class="">Mar</span></li>
+                <!--
+            -->
+                <li class="item-meses"><span class="">Abr</span></li>
+                <!--
+            -->
+                <li class="item-meses"><span class="">May</span></li>
+                <!--
+            -->
+                <li class="item-meses"><span class="">Jun</span></li>
+                <!--
+            -->
+                <li class="item-meses"><span class="">Jul</span></li>
+                <!--
+            -->
+                <li class="item-meses"><span class="">Ago</span></li>
+                <!--
+            -->
+                <li class="item-meses"><span class="">Sep</span></li>
+                <!--
+            -->
+                <li class="item-meses"><span class="">Oct</span></li>
+                <!--
+            -->
+                <li class="item-meses"><span class="">Nov</span></li>
+                <!--
+            -->
+                <li class="item-meses"><span class="">Dic</span></li>
+            </ul>
+            <p class="fontAzul underline text-right padding block w80p mlrauto">Enviar reporte por Email</p>
+        </div>
+        <div ng-show="tabCi">
+            <div class="relative w-100 bg-7ab mt30">
+                <div class="figura padding10" align="center">
+                    <p class="fontBlanco1 fs12 p0">Compara tu precio de consulta base contra</p>
+                    <p class="fontBlanco1 fs12 p0">el precio promedio en tu especialidad</p>
+                </div>
+                <div class="picotop left88"> </div>
+            </div>
+            <div class="w95p mt10 mlrauto mb20">
+                <div class="w100 mb20">
+                    <label class="w100 ml21">Tipo de consulta</label>
+                    <div class="range">
+                        <!-- <input type="range" name="volume" ng-model="data.volume" step="50">-->
+                        <input type="range" min="{{user.min}}" max="{{user.max}}" step="50" ng-model="user.value">
+                    </div>
+                    <div class="col32 text-center inline-block"><img src="main/assets/images/icono/117.png" width="25px" class="hvr-grow"/></div>
+                    <div class="col32 text-center inline-block"><img src="main/assets/images/icono/240.png" width="25px" class="hvr-grow"/></div>
+                    <div class="col32 text-center inline-block"><img src="main/assets/images/icono/241.png" width="25px" class="hvr-grow"/></div>
+                    <div class="w100 relative mt30 c-0f6">
+                        <div class="text-center b1-ccc p5 radius20">
+                            <div class="l0 r0 m-auto absolute point-icon"><img src="main/assets/images/icono/46.png" width="18px" /></div>
+                            <div class="decoration underline">Insurgentes sur 552</div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="w100 mb20">
+                    <label class="w100 ml21">Radio geográfico</label>
+                    <div class="range w100">
+                        <input type="range" name="volume" min="{{kilometro.min}}" max="{{kilometro.max}}" step="1" ng-model="kilometro.value">
+                    </div>
+                    <div class="w84p block ml21 c-a3a">
+                        <div class="col20 left fs-small text-center">1 km</div>
+                        <div class="col20 left fs-small text-center">2 km</div>
+                        <div class="col20 left fs-small text-center">3 km</div>
+                        <div class="col20 left fs-small text-center">4 km</div>
+                        <div class="col20 left fs-small text-center">5 km</div>
+                    </div>
+                </div>
+                <label class="w100 ml21">Nivel de servicio</label>
+                <div class="range">
+                    <!--<input type="range" name="volume" ng-model="data.volu" step="16.66">-->
+                    <input type="range" min="{{star.min}}" max="{{star.max}}" step="16.66" ng-model="star.value">
+                </div>
+                <div class="text-center" ng-show="star.value <= '16'">
+                    <div class="col13 inline-block"><img src="main/assets/images/icono/36.png" width="10px" /></div>
+                    <div class="col13 inline-block"><img src="main/assets/images/icono/36.png" width="10px" /></div>
+                    <div class="col13 inline-block"><img src="main/assets/images/icono/36.png" width="10px" /></div>
+                    <div class="col13 inline-block"><img src="main/assets/images/icono/36.png" width="10px" /></div>
+                    <div class="col13 inline-block"><img src="main/assets/images/icono/36.png" width="10px" /></div>
+                    <div class="col13 inline-block"><img src="main/assets/images/icono/36.png" width="10px" /></div>
+                </div>
+                <div class="text-center" ng-show="star.value == '16.66'">
+                    <div class="col13 inline-block"><img src="main/assets/images/icono/112.png" width="10px" /></div>
+                    <div class="col13 inline-block"><img src="main/assets/images/icono/36.png" width="10px" /></div>
+                    <div class="col13 inline-block"><img src="main/assets/images/icono/36.png" width="10px" /></div>
+                    <div class="col13 inline-block"><img src="main/assets/images/icono/36.png" width="10px" /></div>
+                    <div class="col13 inline-block"><img src="main/assets/images/icono/36.png" width="10px" /></div>
+                    <div class="col13 inline-block"><img src="main/assets/images/icono/36.png" width="10px" /></div>
+                </div>
+                <div class="text-center" ng-show="star.value == '33.32'">
+                    <div class="col13 inline-block"><img src="main/assets/images/icono/112.png" width="10px" /></div>
+                    <div class="col13 inline-block"><img src="main/assets/images/icono/112.png" width="10px" /></div>
+                    <div class="col13 inline-block"><img src="main/assets/images/icono/36.png" width="10px" /></div>
+                    <div class="col13 inline-block"><img src="main/assets/images/icono/36.png" width="10px" /></div>
+                    <div class="col13 inline-block"><img src="main/assets/images/icono/36.png" width="10px" /></div>
+                    <div class="col13 inline-block"><img src="main/assets/images/icono/36.png" width="10px" /></div>
+                </div>
+                <div class="text-center" ng-show="star.value == '49.98'">
+                    <div class="col13 inline-block"><img src="main/assets/images/icono/112.png" width="10px" /></div>
+                    <div class="col13 inline-block"><img src="main/assets/images/icono/112.png" width="10px" /></div>
+                    <div class="col13 inline-block"><img src="main/assets/images/icono/112.png" width="10px" /></div>
+                    <div class="col13 inline-block"><img src="main/assets/images/icono/36.png" width="10px" /></div>
+                    <div class="col13 inline-block"><img src="main/assets/images/icono/36.png" width="10px" /></div>
+                    <div class="col13 inline-block"><img src="main/assets/images/icono/36.png" width="10px" /></div>
+                </div>
+                <div class="text-center" ng-show="star.value == '66.64'">
+                    <div class="col13 inline-block"><img src="main/assets/images/icono/112.png" width="10px" /></div>
+                    <div class="col13 inline-block"><img src="main/assets/images/icono/112.png" width="10px" /></div>
+                    <div class="col13 inline-block"><img src="main/assets/images/icono/112.png" width="10px" /></div>
+                    <div class="col13 inline-block"><img src="main/assets/images/icono/112.png" width="10px" /></div>
+                    <div class="col13 inline-block"><img src="main/assets/images/icono/36.png" width="10px" /></div>
+                    <div class="col13 inline-block"><img src="main/assets/images/icono/36.png" width="10px" /></div>
+                </div>
+                <div class="text-center" ng-show="star.value == '83.3'">
+                    <div class="col13 inline-block"><img src="main/assets/images/icono/112.png" width="10px" /></div>
+                    <div class="col13 inline-block"><img src="main/assets/images/icono/112.png" width="10px" /></div>
+                    <div class="col13 inline-block"><img src="main/assets/images/icono/112.png" width="10px" /></div>
+                    <div class="col13 inline-block"><img src="main/assets/images/icono/112.png" width="10px" /></div>
+                    <div class="col13 inline-block"><img src="main/assets/images/icono/112.png" width="10px" /></div>
+                    <div class="col13 inline-block"><img src="main/assets/images/icono/36.png" width="10px" /></div>
+                </div>
+                <div class="text-center" ng-show="star.value == '99.96'">
+                    <div class="col13 inline-block"><img src="main/assets/images/icono/112.png" width="10px" /></div>
+                    <div class="col13 inline-block"><img src="main/assets/images/icono/112.png" width="10px" /></div>
+                    <div class="col13 inline-block"><img src="main/assets/images/icono/112.png" width="10px" /></div>
+                    <div class="col13 inline-block"><img src="main/assets/images/icono/112.png" width="10px" /></div>
+                    <div class="col13 inline-block"><img src="main/assets/images/icono/112.png" width="10px" /></div>
+                    <div class="col13 inline-block"><img src="main/assets/images/icono/112.png" width="10px" /></div>
+                </div>
+            </div>
+            <div class="mt40 b10-ddd">
+                <div class="w70p mt10 mlrauto">
+                    <div class="b1-7ab row mb20">
+                        <div class=" w100 text-center">
+                            <div class="bg-7ab fontBlanco1">
+                                <div class="vmiddle">Precio base de tu consulta</div>
+                            </div>
+                            <div class="w100 inline-block p5 vmiddle">
+                                <div class="col49 inline-block line relative">
+                                    <div class="fs14 fwb"> $550 </div>
+                                </div>
+                                <div class="col49 inline-block vmiddle">
+                                    <div class="fs-small lh1"> 100 pacientes<br /> activos </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b1-7ab row ">
+                        <div class=" w100 text-center">
+                            <div class="bg-7ab fontBlanco1">
+                                <div class="vmiddle">Precio Promedio de tu especialidad </div>
+                            </div>
+                            <div class="w100 inline-block p5 vmiddle">
+                                <div class="col49 inline-block line relative">
+                                    <div class="fs14 fwb"> $550 </div>
+                                </div>
+                                <div class="col49 inline-block vmiddle">
+                                    <div class="fs-small lh1"> 100 pacientes<br /> activos </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </ion-content>
+    <div class="bar bar-footer" style="height:60px; background-color: #0f698d  !important;">
+        <div align="center" class="row">
+            <div class="col-20 hvr-grow"> <img src="main/assets/images/icono/74.png" class="imgMenu" alt="">
+                <p class="textMenu">Noticias</p>
+            </div>
+            <div class="col-20 hvr-grow" ui-sref="main.agenda"> <img src="main/assets/images/icono/89.png" class="imgMenu" alt="">
+                <p class="textMenu">Agenda</p>
+            </div>
+            <div class="col-20" ui-sref="main.consultas"> <img src="main/assets/images/icono/128.png" class="itemMenu hvr-grow">
+                <div class="textMenu1">
+                    <p class="textMenu">Consultas</p>
+                </div>
+            </div>
+            <div class="col-20 hvr-grow" ui-sref="main.llenarPerfil"> <img src="main/assets/images/icono/78.png" class="imgMenu" alt="">
+                <p class="textMenu">Expediente</p>
+            </div>
+            <div class="col-20 hvr-grow active" ui-sref="main.negocio"> <img src="main/assets/images/icono/216.png" class="imgMenu" alt="">
+                <p class="textMenu">Negocio</p>
+            </div>
+        </div>
+    </div>
+</ion-view>

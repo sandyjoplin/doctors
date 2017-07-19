@@ -1,0 +1,448 @@
+<ion-view view-title="main module">
+    <ion-nav-buttons side="right">
+        <div class="btn-videollamada">
+            <img class="block" src="main/assets/images/icono/117_1.png" width="20px" alt="">
+        </div>
+        <div>
+            <span class="fontBlanco relative">
+            <span class="count">1</span>
+            <img src="main/assets/images/icono/102.png" style="width:30px;margin:0 0 0px 0" alt="">
+            </span>
+        </div>
+        <img src="main/assets/images/bit2.png" style="height:20px;margin:0px 5px 6px 5px" alt="">
+    </ion-nav-buttons>
+    <!-- do you want padding? -->
+    <ion-header-bar class="bar bar-subheader">
+        <ul class="row miTab1 menu-perfil" align="center">
+            <li class="col25" ng-click="tabUnofn()">
+                <a href=""><img src="main/assets/images/icono/230_1.png" width="20px" class="hvr-grow" /></a>
+            </li>
+            <li class="col25" ng-click="tabDosfn()">
+                <a href=""><img src="main/assets/images/icono/132.png" width="20px" class="hvr-grow" /></a>
+            </li>
+            <li class="col25 active" ng-click="tabTresfn()">
+                <a href=""><img src="main/assets/images/icono/historico-recetas-azul.png" width="20px" class="hvr-grow" /></a>
+            </li>
+            <li class="col25" ng-click="tabCuatrofn()">
+                <a href=""><img src="main/assets/images/icono/pregunta-colega-az.png" width="20px" class="hvr-grow" /></a>
+            </li>
+        </ul>
+    </ion-header-bar>
+    <ion-content class="">
+        <div ng-show="tabU">
+            <div class="row row-bottom" ui-sref="main.consulta">
+                <div class="col-33">
+                </div>
+                <div class="col-33" align="center">
+                    <br>
+                    <div class=""> <img src="main/assets/images/perfil1.jpg" class="img9" alt=""> </div>
+                    <p class="fontNegro1">Alan Contreras</p>
+                </div>
+                <div class="col-33 text-center" ui-sref="main.expediente">
+               <div class="hvr-grow">
+                        <img class="block mlrauto" src="main/assets/images/icono/22.png" width="20px" />
+                    <p class="fontAzul6">Expediente</p>
+               </div>
+                </div>
+            </div>
+            <div class="padding10Top"> <img src="main/assets/images/line.png" width="100%;">
+            </div>
+            <div class="padding backVerde">
+                <div class="row row-center">
+                    <div class="col-10 text-center">
+                        <img src="main/assets/images/icono/165.png" height="15px" class="hvr-grow" alt="">
+                    </div>
+
+                    <div class="col-80">
+                        <div class="row">
+                            <div class="col-20" ng-click="slide(0)">
+                                <div class="fontBlanco8 text-center">Peso</div>
+                                <div class="b1all w70p text-center mlrauto" ng-class="{'bg-a2c': 0 === current}">
+                                    <div class="fontBlanco10">57</div>
+                                </div>
+                                <div class="fontBlanco8 text-center">k</div>
+                            </div>
+                            <div class="col-20" ng-click="slide(1)">
+                                <div class="fontBlanco8 text-center">Altura</div>
+                                <div class="b1all w70p text-center mlrauto" ng-class="{'bg-a2c': 1 === current}">
+                                    <div class="fontBlanco10">1.70</div>
+                                </div>
+                                <div class="fontBlanco8 text-center">m</div>
+                            </div>
+                            <div class="col-20" ng-click="slide(2)">
+                                <div class="fontBlanco8 text-center">Temp.</div>
+                                <div class="b1all w70p text-center mlrauto" ng-class="{'bg-a2c': 2 === current}">
+                                    <div class="fontBlanco10">27</div>
+                                </div>
+                                <div class="fontBlanco8 text-center">°c</div>
+                            </div>
+                            <div class="col-20" ng-click="slide(3)">
+                                <div class="fontBlanco8 text-center">Presión</div>
+                                <div class="b1all w70p text-center mlrauto" ng-class="{'bg-a2c': 3 === current}">
+                                    <div class="fontBlanco10">35/70</div>
+                                </div>
+                                <div class="fontBlanco8 text-center"></div>
+                            </div>
+                            <div class="col-20">
+                                <div class="b1all w70p text-center mlrauto" style="margin-top: 18px;">
+                                    <div class="fontBlanco10">+</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10 text-center">
+                        <img src="main/assets/images/icono/166.png" class="hvr-grow" height="15px" alt="">
+                    </div>
+
+                </div>
+            </div>
+            <div class="text-right bg-a2c">
+                <span class="fontBlanco10">Graficas</span>
+                <img src="main/assets/images/icono/166.png" height="10px" alt="">
+            </div>
+            <div>
+                <ion-slide-box on-slide-changed="slideHasChanged($index)">
+                    <ion-slide>
+                        grafica 1
+
+                    </ion-slide>
+                    <ion-slide>
+                        grafica 2
+
+                    </ion-slide>
+                    <ion-slide>
+                        grafica 3
+
+                    </ion-slide>
+                    <ion-slide>
+                        grafica 4
+
+                    </ion-slide>
+                </ion-slide-box>
+            </div>
+            <div class="padding">
+                <div class="bb1 padding10">
+                    <div class="row row-center">
+                        <img src="main/assets/images/icono/206.png" height="20px" class="hvr-grow">
+                        <span class="fontAzul padding10Lef">Alergias</span>
+                    </div>
+                    <div class="pl24">
+                        <p class="fontNegro">Penicilina, Aspirina</p>
+                    </div>
+
+                </div>
+                <div class="bb1 padding10">
+                    <div class="row row-center">
+                        <img src="main/assets/images/icono/200.png" height="20px" class="hvr-grow">
+                        <span class="fontAzul padding10Lef">Antecedentes</span>
+                    </div>
+                    <div class="pl24">
+                        <p class="fontNegro">Cancer, Diabetes,Hiperteción, Obecidad</p>
+                    </div>
+                </div>
+                <div class="bb1 padding10">
+                    <div class="row row-center">
+                        <img src="main/assets/images/icono/34.png" height="20px" class="hvr-grow">
+                        <span class="fontAzul padding10Lef">Padecimientos actuales</span>
+                    </div>
+                    <div class="pl24">
+                        <p class="fontNegro">Diabetes</p>
+                    </div>
+                </div>
+                <div class="bb1 padding10">
+                    <div class="row row-center">
+                        <img src="main/assets/images/icono/203.png" height="20px" class="hvr-grow">
+                        <span class="fontAzul padding10Lef">cirujías</span>
+                    </div>
+                    <div class="pl24">
+                        <p class="fontNegro">Ninguna</p>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="row padding10Top backNaranja" ui-sref="main.historialClinico">
+                    <div class="col-80 pl10">
+                        <img src="main/assets/images/icono/74.png" width="20px" class="alignV hvr-grow" alt="">
+                        <span class="fontBlanco pl10">Historial de consultas</span>
+                    </div>
+                    <div class="col-20">
+                        <img src="main/assets/images/icono/166.png" width="20px" class="derecha hvr-grow" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div ng-show="tabD">
+            <div class="backCrema">
+                <div class="backBlanco mb10 pt10">
+                    <div class="row row-center padding">
+                        <div class="col-50 padding10">
+                            <div class="text-center left">
+                                <!--<div class="radius4 mlrauto">
+        <img width="20px" src="main/assets/images/icono/notas-privadas-az.png" />
+        </div>-->
+                                <span class="fontAzul5">
+      <img src="main/assets/images/icono/25.png" class="alignV hvr-grow" width="15px;" alt="">
+      Consultas pasadas
+      </span>
+                            </div>
+                        </div>
+                        <div class="col-50 padding10">
+                            <div class="right">
+                                <p class="fontAzul5">Notas Privadas<span>
+      <img src="main/assets/images/icono/24.png" class="alignV hvr-grow" width="15px;" alt="">
+      </span>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="backBlanco mb10">
+                    <div class="row row-top">
+                        <div class="col-10">
+                            <div class="padding10">
+                                <img width="20px" src="main/assets/images/icono/35.png" class="hvr-grow">
+                            </div>
+                        </div>
+                        <div class="col-90">
+                            <div class="padding10">
+                                <label class="item-input-wrapper">
+                                    <textarea rows="5" cols="50" name="" id="" placeholder="Observación" class="" style="width:100%"></textarea>
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="backBlanco mb10">
+                    <div class="row row-center padding">
+                        <div class="col-50">
+                            <div class="text-center left padding10">
+                                <div class="inline-block vmiddle">
+                                    <div class=" mlrauto">
+                                        <img class="block hvr-grow" width="20px" src="main/assets/images/icono/notas-privadas-az.png" />
+                                    </div>
+                                </div>
+                                <span class="fontAzul vmiddle inline-block">Diagnostico</span>
+                            </div>
+                        </div>
+                        <div class="col-50">
+                            <div class="right padding10">
+                                <div class="b1-of5 padding6 radius20">
+                                    <div class="inline-block vmiddle">
+                                        <img class="block" width="20px" src="main/assets/images/icono/notas-privadas-az.png" />
+                                    </div>
+                                    <div class="inline-block vmiddle">
+                                        <p class="fontAzul5">Preliminar</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" padding10">
+                        <div class="col-100 bb1 pb5">
+                            <div class="row row-center">
+                                <div class="col-100">
+                                    <input type="text" placeholder="Escribe tu Diagnostico" class="miInput bb0">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="content-relacionadas">
+                        <p class="fontAzul">Notas relacionadas</p>
+                        <span class="relacionadas">Inflamación <soan>x</soan></span>
+                        <span class="relacionadas">Inflamación <soan>x</soan></span>
+                        <span class="relacionadas">Inflamación <soan>x</soan></span>
+                        <span class="relacionadas">Inflamación <soan>x</soan></span>
+                    </div>
+
+
+                </div>
+                <div class="backBlanco">
+                    <div class="row row-top">
+                        <div class="col-10">
+                            <div class="padding10">
+                                <img width="20px" src="main/assets/images/icono/34.png" class="hvr-grow">
+                            </div>
+                        </div>
+                        <div class="col-90">
+                            <div class="padding10">
+                                <label class="item-input-wrapper">
+                                    <textarea rows="5" cols="50" name="" id="" placeholder="Tratamiento" class="" style="width:100%"></textarea>
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="padding10">
+                <div class="row row-center">
+                    <div class="col-75">
+                        <div class="row" align="center">
+                            <div class="col-20"> <img src="main/assets/images/icono/121.png" class="alignV hvr-grow" width="20px" alt=""> </div>
+                            <div class="col-20"> <img src="main/assets/images/icono/120.png" class="alignV hvr-grow" width="20px" alt=""> </div>
+                            <div class="col-20"> <img src="main/assets/images/icono/117.png" class="alignV hvr-grow" width="20px" alt=""> </div>
+                            <div class="col-20"> <img src="main/assets/images/icono/174.png" class="alignV hvr-grow" width="20px" alt=""> </div>
+                            <div class="col-20"> <img src="main/assets/images/icono/229.png" class="alignV hvr-grow" width="20px" alt=""> </div>
+                        </div>
+                    </div>
+                    <div class="col-25 text-left">
+                        <button ui-sref="main.home" class="button28 right hvr-grow" href="#/main/home">
+                            <img src="main/assets/images/icono/87.png" width="20px" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div ng-show="tabT" class="padding">
+            <div class="row row-center padding mt10 mb10">
+                <div class="col-50">
+                    <div class="text-center left">
+                        <p class="fontAzul5"><span>
+        <img src="main/assets/images/icono/25.png" class="alignV hvr-grow" width="15px;" alt="">
+      </span> Recetas pasadas</p>
+                    </div>
+                </div>
+                <div class="col-50">
+                    <div class="right">
+                        <p class="fontAzul5">Notas privadas<span>
+      <img src="main/assets/images/icono/24.png" class="alignV hvr-grow" width="15px;" alt="">
+      </span>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="b1-7ab">
+                <div class="text-center mt10">
+                    <div class="inline-block vmiddle">
+                        <img src="main/assets/images/icono/167.png" class="alignV hvr-grow" width="20px" alt="">
+                    </div>
+                    <div class="inline-block vmiddle fontAzul">Amigdalitis</div>
+                </div>
+                <div class="relative mt20">
+                    <div class="picotop"></div>
+                    <div class="figura padding10" align="center">
+                        <p class="fontBlanco1">70% de los docores en bitrubio han recetado paracetamol para este padecimiento</p>
+                    </div>
+                </div>
+                <div class="backCrema">
+                    <div class="backBlanco mb10">
+                        <div class="row row-top">
+                            <div class="col-10">
+                                <div class="padding10">
+                                    <img width="20px" src="main/assets/images/icono/34.png" class="hvr-grow">
+                                </div>
+                            </div>
+                            <div class="col-90">
+                                <div class="padding10">
+                                    <label class="item-input-wrapper">
+                                        <textarea rows="5" cols="50" name="" id="" placeholder="Escribe el medicamento de tu elección" class="" style="width:100%"></textarea>
+                                    </label>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="backBlanco mb10">
+                        <div class="row row-top">
+                            <div class="col-10">
+                                <div class="padding10">
+                                    <img width="20px" src="main/assets/images/icono/34.png" class="hvr-grow">
+                                </div>
+                            </div>
+                            <div class="col-90">
+                                <div class="padding10">
+                                    <label class="item-input-wrapper">
+                                        <textarea rows="5" cols="50" name="" id="" placeholder="Dosis y notas relaciondas" class="" style="width:100%"></textarea>
+                                    </label>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="padding10">
+                    <div class="bb1 bt1 pt10 pb10 mt20 mb30  text-right">
+                        <div class="inline-block vmiddle fontAzul">Si gustas escribe otro medicamento</div>
+                        <div class="inline-block vmiddle"><img class="block hvr-grow" width="30px" src="main/assets/images/icono/55.png"></div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div ng-show="tabCu">
+            <div class="backVerde padding10" align="center">
+                <span class="fontBlanco1">Pide una segunda opinion a uno o mas colegas</span>
+            </div>
+            <div class="pico"></div>
+            <div class="row row-center mt30">
+                <div class="col-33">
+                </div>
+                <div class="col-33" align="center">
+                    <div class=""> <img src="main/assets/images/perfil1.jpg" class="img9 hvr-grow" alt=""> </div>
+                    <br>
+                    <p class="fontNegro1">Alan Contreras</p>
+                </div>
+                <div class="col-33 text-center">
+                    <img class=" mlrauto vmiddle hvr-grow" src="main/assets/images/icono/1.png" width="15px" />
+                    <span class="fontAzul vmiddle">anonimizar</span>
+                </div>
+            </div>
+            <div class="padding10Top"> <img src="main/assets/images/line.png" width="100%;" alt=""> </div>
+
+            <div class="backCrema">
+                <div class="backBlanco mb10 pb30">
+                    <div class="text-center">
+                        <div class="button8 mlrauto block hvr-grow">
+                            <img src="main/assets/images/icono/76.png" alt="" width="20px">
+                        </div>
+                    </div>
+                </div>
+                <div class="backBlanco mb10">
+
+                    <div class="row">
+                        <div class="padding10">
+                            <br>
+                            <label class="item-input-wrapper">
+                                <textarea rows="10" cols="50" name="" id="" placeholder="Comienza a escribir" class="" style="width:100%">
+                                </textarea>
+                            </label>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="row row-center pb30">
+                            <div class="col-75">
+                                <div class="row" align="center">
+                                    <div class="col-20"> <img src="main/assets/images/icono/121.png" class="alignV" width="20px" alt=""> </div>
+                                    <div class="col-20"> <img src="main/assets/images/icono/120.png" class="alignV" width="20px" alt=""> </div>
+                                    <div class="col-20"> <img src="main/assets/images/icono/117.png" class="alignV" width="20px" alt=""> </div>
+                                    <div class="col-20"> <img src="main/assets/images/icono/upload-expediente.png" class="alignV" width="20px" alt=""> </div>
+                                </div>
+                            </div>
+                            <div class="col-25">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="backBlanco pb30 pt30">
+                    <div align="center">
+                        <button class="button3 margin10"><img src="main/assets/images/icono/87.png" width="20px" alt="" class="alignV">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- content goes here -->
+
+
+    </ion-content>
+
+</ion-view>

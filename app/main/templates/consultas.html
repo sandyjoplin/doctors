@@ -1,0 +1,317 @@
+<ion-view view-title="Consultas">
+   <ion-nav-buttons side="right">
+        <div class="btn-videollamada">
+            <img class="block" src="main/assets/images/icono/117_1.png" width="20px" alt="">
+        </div>
+        <div>
+        <span class="fontBlanco relative">
+            <span class="count">1</span>
+            <img src="main/assets/images/icono/102.png" style="width:30px;margin:0 0 0px 0" alt="">
+        </span> 
+        </div>
+        <img src="main/assets/images/bit2.png" style="height:20px;margin:0px 5px 6px 5px" alt="">
+    </ion-nav-buttons>
+    <ion-content class="backCrema">
+
+        <div class="backBlanco">
+            <ul class="row miTab" align="center">
+                <li class="col33" ng-click="tabUnofn()"><a>Mis Doctores</a></li>
+                <li class="col33" ng-click="tabDosfn()"><a>Sugeridos</a></li>
+                <li class="col33" ng-click="tabTresfn()"><a>Más Cercanos</a></li>
+            </ul>
+        </div>
+ 
+        <div ng-show="tabU">
+            <div class=" backBlanco padding10Top">
+                <label class="item item-input inputS">
+                    <img src="main/assets/images/icono/16.png" width="20px;">
+                    <input type="serch" class="inputS" placeholder="Busca en bitrubio nombre o especialidad">
+                </label>
+            </div>
+            <div class="backBlanco">
+                <div class="">
+                    <div class="backVerde padding20">
+                        <p class="text-center fontBlanco">Aún no tienes doctores, invitalos a unirse a bitrubio</p>
+                    </div>
+                    <div class="pico">
+
+                    </div>
+                    <div class="bloque8">
+                       <br>
+                        <div class="row">
+                            <div class="col-50">
+                                <div class="backBtn derecha">
+                                    <div align="center">
+                                        <img src="main/assets/images/icono/39.png" class="margin5" width="20px">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-50">
+                                <div class="backBtn1">
+                                    <div align="center">
+                                        <img src="main/assets/images/icono/40.png" class="margin5" width="20px">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+
+            <div class="backBlanco padding10 margin10Top">
+                <p class="text-center fontAzul">Solicitudes pendientes</p>
+                <div class="borde3">
+                    <div class="padding10">
+                        <div class="row row-center">
+                            <div class="col-33" ui-sref="main.perfilMedico">
+                                  <p class="fontNegro1">Eduin Garnica</p>
+                        <p class="fontGris4">Medico General</p>
+                            </div>
+                            <div class="col-33" align="center" ui-sref="main.perfilMedico">
+                                <div class="backImg2">
+                                    <img src="main/assets/images/perfil.jpg" class="img9" alt="">
+                                </div>
+                            </div>
+                            <div class="col-33">
+                                <label for="" class="checkbox checkbox-circle alignV derecha">
+                                    <input type="checkbox" class="miCheck1 checkbox-circle" name="" value="">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="margin5">
+                            <p class="fontNegro text-center">Me encantaría poder atenderte</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-50">
+                                <p class="fontGris">32 min</p>
+                            </div>
+                            <div class="col-50">
+                                <p class="fontGris derecha">Ciudad de México</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="backVerde padding10">
+                        <div class="row row-center" align="center">
+                            <div class="col-33">
+                                <img src="main/assets/images/icono/100.png" width="20px" alt="">
+                                <span class="fontBlanco">10</span>
+                            </div>
+                            <div class="col-33">
+                                <img src="main/assets/images/icono/85.png" width="20px" alt="">
+                                <span class="fontBlanco">10</span>
+                            </div>
+                            <div class="col-33">
+                                <img src="main/assets/images/icono/99.png" width="20px" alt="">
+                                <span class="fontBlanco">10</span>
+                                <p class="fontBlanco6">Amigos en común</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="backBlanco padding10 margin10Top">
+                <p class="text-center fontAzul">Mis doctores y Expertos</p>
+                <div class="padding10">
+                    <div class="row row-center padding10" ui-sref="main.perfilMedico">
+                        <div class="col-33">
+                             <p class="fontNegro1">Eduin Garnica</p>
+                        <p class="fontGris4">Medico General</p>
+                        </div>
+                        <div class="col-33" align="center">
+                            <div class="backImg3">
+                                <img src="main/assets/images/perfil.jpg" class="img9" alt="">
+                            </div>
+                        </div>
+                        <div class="col-33">
+                            <img src="main/assets/images/icono/109.png" class="derecha margin5" width="20px;" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <img src="main/assets/images/line.png" width="100%;" alt="">
+                    </div>
+                    <div class="padding10">
+                        <div class="row">
+                            <div class="col-50">
+                                <div class="backBtn derecha">
+                                    <div align="center"><!--Despliega modal de videoconsulta 1 en vista modales--->
+                                        <img src="main/assets/images/icono/161.png" class="margin5" width="20px">
+                                        <p class="fontVerde1">Asistencia ya</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-50">
+                                <div class="backBtn1">
+                                    <div align="center">
+                                        <img src="main/assets/images/icono/162.png" class="margin5" width="20px">
+                                        <p class="fontVerde1">Agendar cita</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="backBlanco padding10 margin10Top">
+                <div class="padding10">
+                    <div class="row row-center padding10" ui-sref="main.perfilMedico">
+                        <div class="col-33">
+                             <p class="fontNegro1">Eduin Garnica</p>
+                        <p class="fontGris4">Medico General</p>
+                        </div>
+                        <div class="col-33" align="center">
+                            <div class="backImg2">
+                                <img src="main/assets/images/perfil.jpg" class="img9" alt="">
+                            </div>
+                        </div>
+                        <div class="col-33">
+                            <img src="main/assets/images/icono/109.png" class="derecha margin5" width="20px;" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <img src="main/assets/images/line.png" width="100%;" alt="">
+                    </div>
+                    <div class="padding10">
+                        <div class="row">
+                            <div class="col-50">
+                                <div class="backBtn derecha">
+                                    <div align="center"> <!--Despliega modal de videoconsulta 1 en vista modales--->
+                                        <img src="main/assets/images/icono/161.png" class="margin5" width="20px">
+                                        <p class="fontVerde1">Asistencia ya</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-50">
+                                <div class="backBtn1">
+                                    <div align="center">
+                                        <img src="main/assets/images/icono/162.png" class="margin5" width="20px">
+                                        <p class="fontVerde1">Agendar cita</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div ng-show="tabD">
+            <div class=" backBlanco padding10Top">
+                <label class="item item-input inputS">
+                    <img src="main/assets/images/icono/16.png" width="20px;">
+                    <input type="serch" class="inputS" placeholder="Busca en bitrubio nombre o especialidad">
+                </label>
+            </div>
+            <div class="backBlanco margin10Top">
+                <div class="">
+                    <div class="padding10">
+                        <div class="row row-center padding10Top">
+                            <div class="col-33" ui-sref="main.perfilMedico">
+                                <p class="fontNegro1">Eduin Garnica</p>
+                        <p class="fontGris4">Medico General</p>
+                            </div>
+                            <div class="col-33" align="center" ui-sref="main.perfilMedico">
+                                <div class="backImg2">
+                                    <img src="main/assets/images/perfil.jpg" class="img9" alt="">
+                                </div>
+                            </div>
+                            <div class="col-33">
+                                <img src="main/assets/images/icono/55.png" class="derecha margin5" width="25px" alt="">
+                            </div>
+                        </div>
+                        <div class="margin5">
+                            <p class="fontNegro text-center">Me encantaría poder atenderte</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-50">
+                                <p class="fontVerde3">Ciudad de México</p>
+                            </div>
+                            <div class="col-50">
+                                <p class="fontNegro derecha"> <img src="main/assets/images/icono/62.png" width="12px" alt=""> $500</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="backVerde padding5Top">
+                        <div class="row row-center" align="center">
+                            <div class="col-33">
+                                <img src="main/assets/images/icono/100.png" width="20px" alt="">
+                                <span class="fontBlanco">10</span>
+                            </div>
+                            <div class="col-33">
+                                <img src="main/assets/images/icono/85.png" width="20px" alt="">
+                                <span class="fontBlanco">10</span>
+                            </div>
+                            <div class="col-33">
+                                <img src="main/assets/images/icono/99.png" width="20px" alt="">
+                                <span class="fontBlanco">10</span>
+                                <p class="fontBlanco6">Amigos en común</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="backBlanco margin10Top">
+                <div class="">
+                    <div class="padding10">
+                        <div class="row row-center padding10Top">
+                            <div class="col-33" ui-sref="main.perfilMedico">
+                                 <p class="fontNegro1">Eduin Garnica</p>
+                        <p class="fontGris4">Medico General</p>
+                            </div>
+                            <div class="col-33" align="center" ui-sref="main.perfilMedico">
+                                <div class="backImg2">
+                                    <img src="main/assets/images/perfil1.jpg" class="img9" alt="">
+                                </div>
+                            </div>
+                            <div class="col-33">
+                                <img src="main/assets/images/icono/55.png" class="derecha margin5" width="25px" alt="">
+                            </div>
+                        </div>
+                        <div class="margin5">
+                            <p class="fontNegro text-center">Me encantaría poder atenderte</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-50">
+                                <p class="fontVerde3">Ciudad de México</p>
+                            </div>
+                            <div class="col-50">
+                                <p class="fontNegro derecha"> <img src="main/assets/images/icono/62.png" width="12px" alt=""> $500</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="backVerde padding10">
+                        <div class="row row-center" align="center">
+                            <div class="col-33">
+                                <img src="main/assets/images/icono/100.png" width="20px" alt="">
+                                <span class="fontBlanco">10</span>
+                            </div>
+                            <div class="col-33">
+                                <img src="main/assets/images/icono/85.png" width="20px" alt="">
+                                <span class="fontBlanco">10</span>
+                            </div>
+                            <div class="col-33">
+                                <img src="main/assets/images/icono/99.png" width="20px" alt="">
+                                <span class="fontBlanco">10</span>
+                                <p class="fontBlanco6">Amigos en común</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div ng-show="tabT">
+            <div class=" backBlanco padding10Top">
+                <label class="item item-input inputS">
+                    <img src="main/assets/images/icono/16.png" width="20px;">
+                    <input type="serch" class="inputS" placeholder="Busca en bitrubio nombre o especialidad">
+                </label>
+            </div>
+            <div class="backVerde" style="height:200px;">
+                <h1>mapa</h1>
+            </div>
+
+        </div>
+    </ion-content>
+</ion-view>
